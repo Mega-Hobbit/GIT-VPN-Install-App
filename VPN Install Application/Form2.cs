@@ -8,11 +8,6 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Diagnostics;
 using System.IO;
 using System.Timers;
@@ -38,10 +33,33 @@ namespace VPN_Install_Application
             InitializeComponent();
         }
 
+       
+
         public void frmInstaller_Load(object sender, EventArgs e)
         {
 
-            
+            string LogPath = @"log.txt";
+
+            try
+            {
+                if (File.Exists(LogPath))
+                {
+                    File.Delete(LogPath);
+                }
+
+
+
+                using (FileStream fs = File.Create(LogPath))
+                {
+                    Byte[] info = new UTF8Encoding(true).GetBytes("Begin Installation");
+                    fs.Write(info, 0, info.Length);
+                }
+            }
+            catch (Exception LogEx)
+            {
+                Console.WriteLine(LogEx.ToString());
+            }
+
             Thread CopyRDPFolder = new Thread(new ThreadStart(CopyRDP.Copy))
             {
                 IsBackground = true
@@ -51,15 +69,37 @@ namespace VPN_Install_Application
           
             Thread WriteToTxtBox = new Thread(new ThreadStart(CopyRDP.WriteToTxtBox));
 
+            string log = "log.txt";
+            string textLine = "";
+
             
 
+            if (System.IO.File.Exists(log) == true)
+            {
+                System.IO.StreamReader objReader;
+                objReader = new System.IO.StreamReader(log);
 
-
+                do
+                {
+                    textLine = textLine + objReader.ReadLine() + "\r\n";
+                    
+                } while (objReader.Peek() != -1);
+                objReader.Close();
             }
+            else
+            {
+                MessageBox.Show("Cannot output" + log);
+            }
+            txtOutput.Text = textLine;
+            txtOutput.Refresh();
+
+
+        }
         public void UpdateStatusTextBox(string text)
         {
             TextReader tr = new StreamReader("log.txt");
             txtOutput.Text = tr.ReadLine();
+            this.Refresh();           
         }
             
 

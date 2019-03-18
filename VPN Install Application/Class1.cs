@@ -80,7 +80,7 @@ namespace VPN_Install_Application
 
                     using (StreamWriter w = File.AppendText("log.txt"))
                     {
-                        Log("Test1", w);
+                        Log("Log", w);
                     }
 
                    // using (StreamWriter r = File.OpenText("log.txt"))
@@ -91,7 +91,7 @@ namespace VPN_Install_Application
                     void Log(string logMessage, TextWriter w)
                     {
                         w.Write("\r\nLog Entry : ");
-                        w.WriteLine(CopyLineFull);
+                        w.WriteLine(CopyLine1 + CopyLine2 + CopyLine3);
                     }
 
                     void DumpLog(StreamReader r)
@@ -102,8 +102,7 @@ namespace VPN_Install_Application
                             Console.WriteLine(line);
                         }
                     }
-                    InstallerForm.UpdateStatusTextBox();
-                        InstallerForm.Refresh();
+
 
                     
                     }

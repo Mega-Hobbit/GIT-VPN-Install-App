@@ -1,6 +1,414 @@
+Begin Installation
+Log Entry : Copying {0}\{1}C:\RDP\13Cabs - Melbourne20190213 - System 1500 - 1759.zip
 
-Log Entry : Copying {0}\{1}C:\RDP\13Cabs - Melbourne20190213 - System 1500 - 1759.log
+Log Entry : Copying {0}\{1}C:\RDP\13Cabs - Melbourne\Investigation\20190213-Outage-SQLServerSQLServer.log
 
-Log Entry : Copying {0}\{1}C:\RDP\13Cabs - Melbourne20190220 - System 0900 - 1159.log
+Log Entry : Copying {0}\{1}C:\RDP\13Cabs - Melbourne\Investigation\20190213-Outage-SQLServerWindowsApplication.log
 
-Log Entry : Copying {0}\{1}C:\RDP\13Cabs - Melbourne20190213 - System 1500 - 1759.log
+Log Entry : Copying {0}\{1}C:\RDP\13Cabs - Melbourne\Investigation\20190213-Outage-SQLServerWindowsSystem.log
+
+Log Entry : Copying {0}\{1}C:\RDP\13Cabs - Melbourne\Remote DesktopBCCSVR100-SQLMirror.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\13Cabs - Melbourne\Remote DesktopBCCSVR144-CityManager.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\13Cabs - Melbourne\Remote DesktopBCCSVR75-APP-ExternalIP.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\13Cabs - Melbourne\Remote DesktopBCCSVR75-APP-Local.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\13Cabs - Melbourne\Remote DesktopBCCSVR76-SQL-ExternalIP.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\13Cabs - Melbourne\Remote DesktopBCCSVR76-SQL-Local.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\13Cabs - Melbourne\Remote DesktopBCCSVR77-SQLReporting.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\13Cabs - Melbourne\Remote DesktopBCCSVR78-APP - TileServer.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\13Cabs - Melbourne\Remote DesktopBCCSVR96-APP2.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\13Cabs - Melbourne\Remote DesktopThumbs.db
+
+Log Entry : Copying {0}\{1}C:\RDP\13Cabs - Melbourne\Remote DesktopzREADME_OLD.txt
+
+Log Entry : Copying {0}\{1}C:\RDP\13Cabs - Melbourne\Remote Desktop_README_13Cabs.txt
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACTtaxi.large.1322.hex
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACTUpdate.DayLightSavings.2010(8051).zip
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACTUpdate.WinCE-1875.Canberra.Full.zip
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Config\BillingBillingProd.reg
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Config\BillingConfigBS.xml
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Config\Billing\SQLuserConfigBS.xml
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Config\Billing\WindowsuserConfigBS.xml
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Config\TelOpConfig.xml
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Config\TelOpTaxiProd.reg
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Config\TelOp\SQLuserConfig.xml
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Config\TelOp\WindowsuserConfig.xml
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\CrashDumpThumbs.db
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\20070430-Billing20070430-Billing2000.zip
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20060711-UpdateAccountPayments.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20060711-UpdateCanberraMultiplier.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20060712-AddExtraDesignations.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20060712-UpdateAccountPayments-2.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20060712-UpdateBookingCustomer.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20060719-AddStreetsWithCompass.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20060721-UpdateAccountPayments.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20060810-DispatchToCancell.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20060811-DispatchToCancell.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20060816-DispatchToCancel.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20060817-DispatchToCancel.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20060824-DispatchToCancel.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20060830-DispatchToCancel.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20060901-DispatchToCancel.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20060906-DispatchToCancel.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20060911-DispatchToCancel.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20060913-DispatchToCancel.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20060921-DispatchToCancel.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20060927-DispatchToCancel.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20060928-DispatchToCancel.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20061002-DispatchToCancel.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20061004-DispatchToCancel.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20061006-DispatchToCancel.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20061019-DispatchToCancel.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20061108-DispatchToCancel.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20070125-CreateVehicleEntries.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scripts20070131-Change CHC fleet schema.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\ScriptsAssignSerialToCar.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\ScriptsCreateAuditScheduledTask.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scriptsdbo.Actions-Indexes.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scriptsdbo.usp_BookingsCompletedQuery.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scriptsdbo.usp_ReportCarDriverBookingSummary.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\Scriptsusp_ActionsRetrieveAll.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFilesOLD_CompressionCodes.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\CompressionCode\Ver-1CompressionCodeFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-1\Ver-1AreaVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-1\Ver-1FenceVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-2\Ver-2AreaVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-2\Ver-2FenceVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-2\Ver-3AreaVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-2\Ver-3FenceVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-2\Ver-4AreaVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-2\Ver-4FenceVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-3\Ver-5AreaVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-3\Ver-5FenceVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-3\Ver-6AreaVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-3\Ver-6FenceVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-3\Ver-7AreaVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-3\Ver-7FenceVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-5\Ver-10AreaVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-5\Ver-10FenceVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-5\Ver-8AreaVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-5\Ver-8FenceVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-5\Ver-9AreaVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-5\Ver-9FenceVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-6\Ver-1AreaVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-6\Ver-1FenceVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-6\Ver-2AreaVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-6\Ver-2FenceVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-6\Ver-3AreaVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-6\Ver-3FenceVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-6\Ver-4AreaVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-6\Ver-4FenceVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-6\Ver-5AreaVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Database\VersionFiles\Canberra\Schema-6\Ver-5FenceVectorFile.ser
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\MapsCanberra.zip
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\pcAnywhereCanberra Cabs - BETA-NEW.CHF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\pcAnywhereCanberra Cabs - BETA.CHF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Remote DesktopACG-MTDATA-Remote Support Login.pdf
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Remote Desktop\OLDACGDBA1 - Archive SQL.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Remote Desktop\OLDCanberra Cabs ALPHA.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Remote Desktop\OLDCanberra Cabs BETA.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Remote Desktop\OLDCanberra Cabs GAMMA.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Remote Desktop\OLDMTDATA-APP-local.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Remote Desktop\OLDMTDATA-APP.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Remote Desktop\OLDMTDATA-DB-local.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Remote Desktop\OLDMTDATA-DB.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Remote Desktop\OLD_README.txt
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Remote Desktop\OLD-20171121ACGMTDAPP1-local.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Remote Desktop\OLD-20171121ACGMTDAPP1.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Remote Desktop\OLD-20171121ACGMTDDB1-local.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Remote Desktop\OLD-20171121ACGMTDDB1.rdp
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Remote Desktop\OLD-20171121_README.txt
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports20070723-PermanentBookings.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports20070725-Cars Working 23-Jul-07.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports20070920-Cars Working 20-Sep-07.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports20070920-Cars Working 20-Sep-07.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports20080115-WagonWithCage.sql
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports20080115-WagonWithCage.txt
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports20080115-WagonWithCage.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\ReportsCanberra Reporting.doc
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\ReportsCanberra Reporting.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\ReportsReport_CHC_2006_07_DailyCount.txt
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\ReportsReport_CHC_2006_07_DailyCount.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-052009-May-Performance-CE.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-052009-May-Performance-HOTS.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-052009-May-Performance-QE.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-052009-May-Performance-SS.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-052009-May-Performance-WATS.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-052009-May-WATS Export.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-05CanberraElite.txt
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-05HOTS.txt
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-05QueanbeyanElite.txt
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-05SilverService.txt
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-05WATS-Data.txt
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-05WATS.txt
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-062009-June-Performance-CE.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-062009-June-Performance-HOTS.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-062009-June-Performance-QE.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-062009-June-Performance-SS.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-062009-June-Performance-WATS.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-062009-June-WATS Export.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-06CanberraElite.txt
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-06HOTS.txt
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-06QueanbeyanElite.txt
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-06SilverService.txt
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-06WATS-Data.txt
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-06WATS.txt
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-06\Copies2009-June-WATS Export.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-06\Copiescopy2009-June-Performance-WATS.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-06\CopiesWATS-Data.txt
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Reports\MonthlyFleetPerformance\2009-06\CopiesWATS.txt
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Database..cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Database0.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Database2.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Database2a.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Database2al.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Database2ali.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Database2alic.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Database31Days.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Database31QDays.xls
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Database8.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Database81.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Database810.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databasea.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databaseaa.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseACCAUTH.DBF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databaseaccauth.inf
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseACCAUTH1.NDX
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseACCEXPT.DBF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseACCOUNT.DBF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseACCOUNT.INF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseACCOUNT.mdb
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseACCOUNT1.NDX
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseACCOUNT2.NDX
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseACCOUNT3.NDX
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseACCOUNT4.NDX
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseACCPIKUP.DBF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseACCPIKUP.INF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseACCPIKUP.NDX
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseACCPIKUPnew.DBF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseACCREQD.DBF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databaseaccreqd.inf
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseACCREQD1.NDX
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseADCCQUES.DAT
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseADDREC.EXE
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseAdmin415-06.exe
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databaseal.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databaseali.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databasealic.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databasealice.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databaseall.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseALLD.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseALLDA.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseALLDAY.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseALLDAY05.CAL
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseALLDAY06.CAL
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseANNETTE.CAL
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseAREA.DBF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseAREA.INF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseAREA.mdb
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseAREA1.NDX
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseAREA2.NDX
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseATTRIBS.DBF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseATTRIBS.INF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseATTRIBS.mdb
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databaseattribs.sav
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseATTRIBS1.NDX
