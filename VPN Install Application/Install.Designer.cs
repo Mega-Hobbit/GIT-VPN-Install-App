@@ -1,6 +1,6 @@
 ﻿namespace VPN_Install_Application
 {
-    partial class frmInstaller
+    partial class ExeInstaller
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInstaller));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExeInstaller));
             this.btnCancel = new System.Windows.Forms.Button();
             this.prgInstall = new System.Windows.Forms.ProgressBar();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -54,7 +54,7 @@
             this.prgInstall.Location = new System.Drawing.Point(55, 240);
             this.prgInstall.Name = "prgInstall";
             this.prgInstall.Size = new System.Drawing.Size(329, 23);
-            this.prgInstall.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.prgInstall.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.prgInstall.TabIndex = 1;
             // 
             // pictureBox2
@@ -66,7 +66,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
-
             // 
             // pictureBox1
             // 
@@ -99,7 +98,7 @@
             this.txtOutput.Size = new System.Drawing.Size(329, 142);
             this.txtOutput.TabIndex = 6;
             // 
-            // frmInstaller
+            // ExeInstaller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -114,10 +113,9 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmInstaller";
+            this.Name = "ExeInstaller";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MTI VPN Installer";
-            this.Load += new System.EventHandler(this.frmInstaller_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

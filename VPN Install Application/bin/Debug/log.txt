@@ -412,3 +412,101 @@ Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databas
 Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databaseattribs.sav
 
 Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseATTRIBS1.NDX
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseAUDIT.DBF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databaseaudit.inf
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databaseb.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBANNED.DBF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBANNED.INF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBANNED1.NDX
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBARBIE.CAL
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBARBIE2.CAL
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databasebb.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databasebe.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBILLING.DBF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databasebilling.inf
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBILLING1.NDX
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBILLING2.NDX
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBK010705.dbf
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBK200705.dbf
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBKLIMIT.DBF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBKLIMIT.INF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBKLIMIT1.NDX
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBKTYPE.DBF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBKTYPE.INF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBKTYPE1.NDX
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBLACKL1.NDX
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBLACKL2.NDX
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBLACKL3.NDX
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBLACKLST.DBF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBLACKLST.INF
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databasebo.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databasebon.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBONBROWN.CAL
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databasebr.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databasebro.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databasebron.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseBROWSE.EXE
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databasebu.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databasec.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databaseca.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseCALINDEX.DAT
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseCALOIA.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseCancabs.gif
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseCanMsg.TBL
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseCANMSG.TXT
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databasecat.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databasecc.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databasecco.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\Databaseccoo.cal
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseCCOOK.CAL
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseCHANLOAD.DAT
+
+Log Entry : Copying {0}\{1}C:\RDP\Aerial Transport - ACT\Sigtec\SigtecDB\DatabaseCHANNEL.DBF
