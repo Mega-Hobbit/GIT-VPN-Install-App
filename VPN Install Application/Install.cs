@@ -48,11 +48,6 @@ namespace VPN_Install_Application
             txtOutput.AppendText(value);
         }
 
-        public void StopProgressBar()
-        {
-            //This needs to be worked on...
-            prgInstall.Value = 25;
-        }
 
 
 
@@ -85,7 +80,6 @@ namespace VPN_Install_Application
                     AppendTextBox(CopyLine1 + CopyLine2 + CopyLine3 + "\r\n");
                         }
                     }
-                StopProgressBar();
             }
             catch (Exception)
             {}

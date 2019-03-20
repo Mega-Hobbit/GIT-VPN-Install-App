@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExeInstaller));
             this.btnCancel = new System.Windows.Forms.Button();
-            this.prgInstall = new System.Windows.Forms.ProgressBar();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -41,21 +40,13 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(309, 269);
+            this.btnCancel.Location = new System.Drawing.Point(309, 240);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 0;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // prgInstall
-            // 
-            this.prgInstall.Location = new System.Drawing.Point(55, 240);
-            this.prgInstall.Name = "prgInstall";
-            this.prgInstall.Size = new System.Drawing.Size(329, 23);
-            this.prgInstall.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.prgInstall.TabIndex = 1;
             // 
             // pictureBox2
             // 
@@ -103,12 +94,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(396, 299);
+            this.ClientSize = new System.Drawing.Size(396, 275);
             this.ControlBox = false;
             this.Controls.Add(this.txtOutput);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.prgInstall);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -126,7 +116,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.ProgressBar prgInstall;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;
