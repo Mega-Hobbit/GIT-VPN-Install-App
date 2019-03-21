@@ -22,7 +22,7 @@ namespace VPN_Install_Application
 
 
 
-            using (StreamReader sr = new StreamReader(@"C:\mtivpnconfig.ini"))
+            using (StreamReader sr = new StreamReader("mtivpnconfig.ini"))
             {
                 while (sr.Peek() >= 0)
                 {
@@ -64,26 +64,30 @@ namespace VPN_Install_Application
             RunInstallers();
         }
 
-        public void CopyFiles(DirectoryInfo filesource, DirectoryInfo filetarget) {
+        public void CopyFiles(DirectoryInfo filesource, DirectoryInfo filetarget)
+        {
+            Directory.CreateDirectory(filetarget.FullName);
 
             try
             {
                 //Copy files from Source Folder to Target
                 foreach (DirectoryInfo diSourceSubDir in filesource.GetDirectories())
                 {
-                    DirectoryInfo nextTargetSubDir =
-                    Target.CreateSubdirectory(diSourceSubDir.Name);
-                    CopyFiles(diSourceSubDir, nextTargetSubDir);
-
                     Debug.WriteLine("Creating Directory: " + diSourceSubDir);
+
+                    DirectoryInfo nextTargetSubDir =
+                    filetarget.CreateSubdirectory(diSourceSubDir.Name);
+                    CopyFiles(diSourceSubDir, nextTargetSubDir);
 
                     foreach (FileInfo fi in filesource.GetFiles())
                     { 
                         Debug.WriteLine("Copying file: " + filetarget.FullName + fi.Name);
 
-                        fi.CopyTo(Path.Combine(Target.FullName, fi.Name), true);
+                        fi.CopyTo(Path.Combine(filetarget.FullName, fi.Name), true);
                         AppendTextBox("Copying file: " + filetarget.FullName + fi.Name + "\r\n");
                     }
+
+                   
 
                 }
             }
