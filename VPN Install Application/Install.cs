@@ -78,17 +78,14 @@ namespace VPN_Install_Application
                     DirectoryInfo nextTargetSubDir =
                     filetarget.CreateSubdirectory(diSourceSubDir.Name);
                     CopyFiles(diSourceSubDir, nextTargetSubDir);
+                }
 
-                    foreach (FileInfo fi in filesource.GetFiles())
-                    { 
-                        Debug.WriteLine("Copying file: " + filetarget.FullName + fi.Name);
+                foreach (FileInfo fi in filesource.GetFiles())
+                {
+                    Debug.WriteLine("Copying file: " + filetarget.FullName + fi.Name);
 
-                        fi.CopyTo(Path.Combine(filetarget.FullName, fi.Name), true);
-                        AppendTextBox("Copying file: " + filetarget.FullName + fi.Name + "\r\n");
-                    }
-
-                   
-
+                    fi.CopyTo(Path.Combine(filetarget.FullName, fi.Name), true);
+                    AppendTextBox("Copying file: " + filetarget.FullName + fi.Name + "\r\n");
                 }
             }
             catch (Exception)
