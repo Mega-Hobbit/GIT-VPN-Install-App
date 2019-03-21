@@ -12,10 +12,15 @@ namespace VPN_Install_Application
     {
         DirectoryInfo Source;
         DirectoryInfo Target;
+        DirectoryInfo Installers;
+
+        Thread runWorkerThreadThead;
 
         public ExeInstaller()
         {
             InitializeComponent();
+
+
 
             using (StreamReader sr = new StreamReader(@"C:\mtivpnconfig.ini"))
             {
@@ -27,15 +32,17 @@ namespace VPN_Install_Application
 
                     strArray = str.Split(',');
                     Source = new DirectoryInfo(strArray[0]);
-                    Debug.WriteLine("Original Folder is set to " + Source);
+                    Debug.WriteLine("Source Folder is set to " + Source);
                     Target = new DirectoryInfo(strArray[1]);
-                    Debug.WriteLine("Final Folder is set to " + Target);
+                    Debug.WriteLine("Target Folder is set to " + Target);
+                    Installers = new DirectoryInfo(strArray[2]);
+                    Debug.WriteLine("Installer Folder is set to " + Installers);
                 }
             }
 
-            Thread CopyThead = new Thread(() => Copyfiles(Source,Target));
-            CopyThead.IsBackground = true;
-            CopyThead.Start();
+            runWorkerThreadThead = new Thread(() => WorkerThread());
+            runWorkerThreadThead.IsBackground = true;
+            runWorkerThreadThead.Start();
         }
 
         public void AppendTextBox(string value)
@@ -51,52 +58,67 @@ namespace VPN_Install_Application
 
 
 
-        public void Copyfiles(DirectoryInfo filesource, DirectoryInfo filetarget)
+        public void WorkerThread()
         {
-            Directory.CreateDirectory(filetarget.FullName);
+            CopyFiles(Source,Target);
+            RunInstallers();
+        }
+
+        public void CopyFiles(DirectoryInfo filesource, DirectoryInfo filetarget) {
 
             try
             {
+                //Copy files from Source Folder to Target
                 foreach (DirectoryInfo diSourceSubDir in filesource.GetDirectories())
                 {
                     DirectoryInfo nextTargetSubDir =
-                    filetarget.CreateSubdirectory(diSourceSubDir.Name);
-                    Copyfiles(diSourceSubDir, nextTargetSubDir);
-                    
-                foreach (FileInfo fi in filesource.GetFiles())
-                {
-                    string CopyLine1 = @"Copying: ";
-                    string CopyLine2 = filetarget.FullName;
-                    string CopyLine3 = fi.Name;
+                    Target.CreateSubdirectory(diSourceSubDir.Name);
+                    CopyFiles(diSourceSubDir, nextTargetSubDir);
 
-                    Debug.WriteLine(CopyLine1, CopyLine2, CopyLine3);
+                    Debug.WriteLine("Creating Directory: " + diSourceSubDir);
 
-                    fi.CopyTo(Path.Combine(filetarget.FullName, fi.Name), true);
+                    foreach (FileInfo fi in filesource.GetFiles())
+                    { 
+                        Debug.WriteLine("Copying file: " + filetarget.FullName + fi.Name);
 
-                    string CopyLineFull = CopyLine1 + CopyLine2 + CopyLine3;
-
-                        Debug.WriteLine("\r\nLog Entry : ");
-                        Debug.WriteLine(CopyLine1 + CopyLine2 + CopyLine3);
-                    AppendTextBox(CopyLine1 + CopyLine2 + CopyLine3 + "\r\n");
-                        }
+                        fi.CopyTo(Path.Combine(Target.FullName, fi.Name), true);
+                        AppendTextBox("Copying file: " + filetarget.FullName + fi.Name + "\r\n");
                     }
+
+                }
             }
             catch (Exception)
-            {}
+            { }
+        }
+
+        public void RunInstallers()
+        {
+            //Read Installer files and run
+            FileInfo[] InstallerFiles = Installers.GetFiles("*.exe");
+            //string str = "";
+            foreach (FileInfo file in InstallerFiles)
+            {
+                AppendTextBox("Running " + Installers + @"\" + file.Name);
+                //str = str + ", " + file.Name;
+                Debug.WriteLine("Running " + Installers + @"\" + file.Name);
+                var process = Process.Start(Installers + @"\" + file.Name);
+                while (!process.HasExited)
+                {
+                    Debug.WriteLine("Waiting: " + Installers + @"\" + file.Name);
+                    //update UI
+                }
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
             var confirmResult = MessageBox.Show("Are you sure you want to cancel the installation?", "Cancel Installation", MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
-            {
+                runWorkerThreadThead.Abort();
                 this.Close();
             }
         }
     }
-
-
-}
 
 
 
