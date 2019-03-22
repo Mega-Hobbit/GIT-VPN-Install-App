@@ -21,7 +21,7 @@ namespace VPN_Install_Application
         private void Install_Click(object sender, System.EventArgs e)
         {
             ExeInstaller newExeInstaller = new ExeInstaller();
-            newExeInstaller.Show();
+            newExeInstaller.ShowDialog();
         }
     }
 }
