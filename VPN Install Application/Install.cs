@@ -14,7 +14,11 @@ namespace VPN_Install_Application
         DirectoryInfo Target;
         DirectoryInfo Installers;
 
-        Thread runWorkerThreadThead;
+        Thread runWorkerThreadThread;
+
+        string CopyProgress = "0";
+
+
 
         public ExeInstaller()
         {
@@ -40,9 +44,18 @@ namespace VPN_Install_Application
                 }
             }
 
-            runWorkerThreadThead = new Thread(() => WorkerThread());
-            runWorkerThreadThead.IsBackground = true;
-            runWorkerThreadThead.Start();
+            runWorkerThreadThread = new Thread(() => WorkerThread());
+            runWorkerThreadThread.IsBackground = true;
+            runWorkerThreadThread.Start();
+
+
+
+            if(CopyProgress == "1")
+            
+                btnNext.Enabled = true;
+
+            else btnNext.Enabled = false;
+
         }
 
         public void AppendTextBox(string value)
@@ -54,14 +67,27 @@ namespace VPN_Install_Application
             }
             txtOutput.AppendText(value);
         }
-
+        public void EnableNext(string value)
+        {
+            if (InvokeRequired)
+            {
+                this.Invoke(new Action<string>(EnableNext), new object[] { value });
+                return;
+            }
+            txtOutput.Text = "Copying complete. Click Next to continue";
+            btnNext.Enabled = true;
+        }
 
 
 
         public void WorkerThread()
         {
-            CopyFiles(Source,Target);
-            RunInstallers();
+            CopyFiles(Source,Target);          
+            CopyProgress = "1";
+                EnableNext(CopyProgress);
+
+            
+            //RunInstallers();
         }
 
         public void CopyFiles(DirectoryInfo filesource, DirectoryInfo filetarget)
@@ -92,34 +118,51 @@ namespace VPN_Install_Application
             { }
         }
 
-        public void RunInstallers()
-        {
-            //Read Installer files and run
-            FileInfo[] InstallerFiles = Installers.GetFiles("*.exe");
-            //string str = "";
-            foreach (FileInfo file in InstallerFiles)
-            {
-                AppendTextBox("Running " + Installers + @"\" + file.Name);
-                //str = str + ", " + file.Name;
-                Debug.WriteLine("Running " + Installers + @"\" + file.Name);
-                var process = Process.Start(Installers + @"\" + file.Name);
-                while (!process.HasExited)
-                {
-                    Debug.WriteLine("Waiting: " + Installers + @"\" + file.Name);
-                    //update UI
-                }
-            }
-        }
+        
+
+       
+
+
+
+        /*  public void RunInstallers()
+          {
+              //Read Installer files and run
+              FileInfo[] InstallerFiles = Installers.GetFiles("*.exe");
+              //string str = "";
+              foreach (FileInfo file in InstallerFiles)
+              {
+                  AppendTextBox("Running " + Installers + @"\" + file.Name);
+                  //str = str + ", " + file.Name;
+                  Debug.WriteLine("Running " + Installers + @"\" + file.Name);
+                  var process = Process.Start(Installers + @"\" + file.Name);
+                  while (!process.HasExited)
+                  {
+                      Debug.WriteLine("Waiting: " + Installers + @"\" + file.Name);
+                      //update UI
+                  }
+              }
+
+        } */
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
             var confirmResult = MessageBox.Show("Are you sure you want to cancel the installation?", "Cancel Installation", MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
-                runWorkerThreadThead.Abort();
+                runWorkerThreadThread.Abort();
                 this.Close();
             }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+           var confirmResult = MessageBox.Show("Next", "You clicked Next", MessageBoxButtons.OK);
+            if (confirmResult == DialogResult.OK)
+                this.Close();
         }
     }
+
+
+}
+    
 
 
 
