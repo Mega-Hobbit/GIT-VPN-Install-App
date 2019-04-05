@@ -14,6 +14,7 @@ namespace VPN_Install_Application
         DirectoryInfo Target;
         DirectoryInfo Installers;
 
+
         Thread runWorkerThreadThread;
 
         string CopyProgress = "0";
@@ -66,7 +67,9 @@ namespace VPN_Install_Application
                 return;
             }
             txtOutput.AppendText(value);
-        }
+
+            
+                }
         public void EnableNext(string value)
         {
             if (InvokeRequired)
@@ -149,14 +152,17 @@ namespace VPN_Install_Application
             var confirmResult = MessageBox.Show("Are you sure you want to cancel the installation?", "Cancel Installation", MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
                 runWorkerThreadThread.Abort();
-                this.Close();
+            MainActivity MainMenuForm = new MainActivity();
+            MainMenuForm.Show();
+            runWorkerThreadThread.Abort();
+            this.Close();
             }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-           var confirmResult = MessageBox.Show("Next", "You clicked Next", MessageBoxButtons.OK);
-            if (confirmResult == DialogResult.OK)
-                this.Close();
+            InstallFortiClient FortiClientForm = new InstallFortiClient();
+            FortiClientForm.Show();
+            this.Close();
         }
     }
 

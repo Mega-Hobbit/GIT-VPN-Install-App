@@ -46,6 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GlobalProtectInstall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalProtectInstall.Designer.cs">
+      <DependentUpon>GlobalProtectInstall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallFortiClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallFortiClient.Designer.cs">
+      <DependentUpon>InstallFortiClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallingFortiClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallingFortiClient.Designer.cs">
+      <DependentUpon>InstallingFortiClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallingGlobalProtect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallingGlobalProtect.Designer.cs">
+      <DependentUpon>InstallingGlobalProtect.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainActivity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +84,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GlobalProtectInstall.resx">
+      <DependentUpon>GlobalProtectInstall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallFortiClient.resx">
+      <DependentUpon>InstallFortiClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallingFortiClient.resx">
+      <DependentUpon>InstallingFortiClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallingGlobalProtect.resx">
+      <DependentUpon>InstallingGlobalProtect.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainActivity.resx">
       <DependentUpon>MainActivity.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,10 +129,12 @@
     <None Include="Resources\2019-03-12_15-22-34.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Global Protect.e122ac7f-3d6b-4a89-a0d8-c0fc14b0a67f" />
     <None Include="Resources\install_png_file_3d9_icon.ico" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\button.jpg" />
+    <None Include="Resources\forticlient.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
