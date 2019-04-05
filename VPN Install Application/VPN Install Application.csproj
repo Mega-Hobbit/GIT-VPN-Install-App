@@ -73,6 +73,18 @@
     <Compile Include="InstallingGlobalProtect.Designer.cs">
       <DependentUpon>InstallingGlobalProtect.cs</DependentUpon>
     </Compile>
+    <Compile Include="InstallingKerio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallingKerio.Designer.cs">
+      <DependentUpon>InstallingKerio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KerioInstall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KerioInstall.Designer.cs">
+      <DependentUpon>KerioInstall.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainActivity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +110,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InstallingGlobalProtect.resx">
       <DependentUpon>InstallingGlobalProtect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallingKerio.resx">
+      <DependentUpon>InstallingKerio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KerioInstall.resx">
+      <DependentUpon>KerioInstall.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainActivity.resx">
       <DependentUpon>MainActivity.cs</DependentUpon>
@@ -138,6 +156,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\button.jpg" />
+    <None Include="Resources\Kerio.png" />
     <None Include="Resources\forticlient.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

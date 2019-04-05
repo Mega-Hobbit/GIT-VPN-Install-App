@@ -121,31 +121,6 @@ namespace VPN_Install_Application
             { }
         }
 
-        
-
-       
-
-
-
-        /*  public void RunInstallers()
-          {
-              //Read Installer files and run
-              FileInfo[] InstallerFiles = Installers.GetFiles("*.exe");
-              //string str = "";
-              foreach (FileInfo file in InstallerFiles)
-              {
-                  AppendTextBox("Running " + Installers + @"\" + file.Name);
-                  //str = str + ", " + file.Name;
-                  Debug.WriteLine("Running " + Installers + @"\" + file.Name);
-                  var process = Process.Start(Installers + @"\" + file.Name);
-                  while (!process.HasExited)
-                  {
-                      Debug.WriteLine("Waiting: " + Installers + @"\" + file.Name);
-                      //update UI
-                  }
-              }
-
-        } */
 
         private void btnCancel_Click(object sender, EventArgs e)
         {

@@ -59,8 +59,8 @@ namespace VPN_Install_Application
                 Debug.WriteLine("Finished installing Forticlient. Returning to Installer");
 
 
-            GlobalProtectInstall InstallGlobalProtect = new GlobalProtectInstall();
-            InstallGlobalProtect.Show();
+            KerioInstall InstallKerio = new KerioInstall();
+            InstallKerio.Show();
             this.Close();
         }
     }

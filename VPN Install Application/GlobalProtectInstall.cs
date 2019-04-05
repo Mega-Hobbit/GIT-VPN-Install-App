@@ -21,6 +21,8 @@ namespace VPN_Install_Application
 
         }
 
+        //opens next form, closes this one
+
         private void btnSkip_Click(object sender, EventArgs e)
         {
             GlobalProtectInstall formGlobalProtect = new GlobalProtectInstall();
@@ -50,6 +52,26 @@ namespace VPN_Install_Application
 
         }
 
-    
+
+
+        /* private void InstallerClosing(object sender, FormClosedEventArgs e)
+         {
+             MainActivity MainScreen = new MainActivity();
+             if (string.Equals((sender as Button).Name, @"CloseButton"))
+             {
+
+                 if (MessageBox.Show("Are you sure you want to cancel the installation?", "Cancel Installation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                 {
+                     MainScreen.Show();
+                     this.Close();
+                 }
+                 else
+                 {
+                     MainScreen.Show();
+                     this.Close();
+                 }
+             }
+        }*/
+
     }
 }

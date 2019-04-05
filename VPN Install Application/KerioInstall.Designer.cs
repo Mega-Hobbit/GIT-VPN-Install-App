@@ -1,6 +1,6 @@
 ﻿namespace VPN_Install_Application
 {
-    partial class GlobalProtectInstall
+    partial class KerioInstall
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GlobalProtectInstall));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KerioInstall));
             this.btnSkip = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -41,30 +41,30 @@
             // 
             // btnSkip
             // 
-            this.btnSkip.Location = new System.Drawing.Point(154, 284);
+            this.btnSkip.Location = new System.Drawing.Point(158, 284);
             this.btnSkip.Name = "btnSkip";
             this.btnSkip.Size = new System.Drawing.Size(75, 23);
-            this.btnSkip.TabIndex = 11;
+            this.btnSkip.TabIndex = 17;
             this.btnSkip.Text = "Skip";
             this.btnSkip.UseVisualStyleBackColor = true;
             this.btnSkip.Click += new System.EventHandler(this.btnSkip_Click);
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(275, 284);
+            this.btnNext.Location = new System.Drawing.Point(279, 284);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(75, 23);
-            this.btnNext.TabIndex = 10;
+            this.btnNext.TabIndex = 16;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(356, 284);
+            this.btnCancel.Location = new System.Drawing.Point(360, 284);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 9;
+            this.btnCancel.TabIndex = 15;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -72,44 +72,43 @@
             // txtFortiClientDisclaimer
             // 
             this.txtFortiClientDisclaimer.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtFortiClientDisclaimer.Location = new System.Drawing.Point(154, 12);
+            this.txtFortiClientDisclaimer.Location = new System.Drawing.Point(158, 12);
             this.txtFortiClientDisclaimer.Multiline = true;
             this.txtFortiClientDisclaimer.Name = "txtFortiClientDisclaimer";
             this.txtFortiClientDisclaimer.ReadOnly = true;
             this.txtFortiClientDisclaimer.Size = new System.Drawing.Size(277, 261);
-            this.txtFortiClientDisclaimer.TabIndex = 6;
+            this.txtFortiClientDisclaimer.TabIndex = 12;
             this.txtFortiClientDisclaimer.TabStop = false;
-            this.txtFortiClientDisclaimer.Text = "GlobalProtect VPN is a VPN client MTI uses to access all 13 Cabs remote desktops." +
-    " By clicking next you agree to install this, or you can click Skip if you alread" +
-    "y have this installed.";
+            this.txtFortiClientDisclaimer.Text = "Kerio is a VPN client MTI uses to access Suburban Taxis in Adelaide. By clicking " +
+    "Next you agree to install this on your computer. Otherwise click Skip if you alr" +
+    "eady have this installed.";
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::VPN_Install_Application.Properties.Resources.Global_Protect;
-            this.pictureBox2.Location = new System.Drawing.Point(16, 116);
+            this.pictureBox2.Image = global::VPN_Install_Application.Properties.Resources.Kerio;
+            this.pictureBox2.Location = new System.Drawing.Point(20, 116);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(132, 132);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::VPN_Install_Application.Properties.Resources._2019_03_12_15_22_34;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(140, 66);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
-            // GlobalProtectInstall
+            // KerioInstall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(438, 319);
-            this.ControlBox = false;
             this.Controls.Add(this.btnSkip);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnCancel);
@@ -119,9 +118,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "GlobalProtectInstall";
+            this.Name = "KerioInstall";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Install Global Protect VPN";
+            this.Text = "Install Kerio VPN";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

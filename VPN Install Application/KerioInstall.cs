@@ -8,27 +8,37 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace VPN_Install_Application
 {
-    public partial class InstallFortiClient : Form
+    public partial class KerioInstall : Form
     {
-
-        public InstallFortiClient()
+        public KerioInstall()
         {
             InitializeComponent();
+        }
 
-
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            //show install activated form and hide this one
+            {
+                this.Hide();
+                InstallingKerio KerioInstallEnabled = new InstallingKerio();
+                KerioInstallEnabled.Show();
+            }
         }
 
         private void btnSkip_Click(object sender, EventArgs e)
+
+            //closes this form and opens the next installer
         {
-            GlobalProtectInstall formGlobalProtect = new GlobalProtectInstall();
-            formGlobalProtect.Show();
+            GlobalProtectInstall formGlobalProtect = new GlobalProtectInstall(); //change this
+            formGlobalProtect.Show(); //change this
             this.Close();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
+
+            //quits installation
         {
             MainActivity MainMenu = new MainActivity();
             var CancelConfirm = MessageBox.Show("Cancel Installation", "Are you sure you want to cancel?", MessageBoxButtons.YesNo);
@@ -37,17 +47,6 @@ namespace VPN_Install_Application
                 MainMenu.Show();
                 this.Close();
             }
-                
         }
-
-        private void btnNext_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            InstallingFortiClient FortiClientInstallEnabled = new InstallingFortiClient();
-            FortiClientInstallEnabled.Show();
-
-
-        }
-
     }
 }
