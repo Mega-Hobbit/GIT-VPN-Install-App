@@ -10,35 +10,14 @@ using System.Windows.Forms;
 
 namespace VPN_Install_Application
 {
-    public partial class KerioInstall : Form
+    public partial class InstallOpenConnect : Form
     {
-        public KerioInstall()
+        public InstallOpenConnect()
         {
             InitializeComponent();
         }
 
-        private void btnNext_Click(object sender, EventArgs e)
-        {
-            //show install activated form and hide this one
-            {
-                this.Hide();
-                InstallingKerio KerioInstallEnabled = new InstallingKerio();
-                KerioInstallEnabled.Show();
-            }
-        }
-
-        private void btnSkip_Click(object sender, EventArgs e)
-
-            //closes this form and opens the next installer
-        {
-            InstallOpenConnect formOpenConnect = new InstallOpenConnect(); 
-            formOpenConnect.Show(); 
-            this.Close();
-        }
-
         private void btnCancel_Click(object sender, EventArgs e)
-
-            //quits installation
         {
             MainActivity MainMenu = new MainActivity();
             var CancelConfirm = MessageBox.Show("Cancel Installation", "Are you sure you want to cancel?", MessageBoxButtons.YesNo);
@@ -49,11 +28,27 @@ namespace VPN_Install_Application
             }
         }
 
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            this.Hide(); 
+            InstallingOpenConnect OpenConnectInstallEnabled = new InstallingOpenConnect(); 
+            OpenConnectInstallEnabled.Show(); 
+
+
+        }
+
+        private void btnSkip_Click(object sender, EventArgs e)
+        {
+            GlobalProtectInstall formGlobalProtect = new GlobalProtectInstall(); //Change this
+            formGlobalProtect.Show(); //Change this
+            this.Close();
+        }
+
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            GlobalProtectInstall formGlobalProtect = new GlobalProtectInstall();
-            formGlobalProtect.Show();
+            KerioInstall formKerio = new KerioInstall();
+            formKerio.Show();
         }
     }
 }

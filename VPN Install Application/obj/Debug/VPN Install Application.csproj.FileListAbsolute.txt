@@ -36,3 +36,6 @@ C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Applica
 C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.InstallingFortiClient.resources
 C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.InstallingGlobalProtect.resources
 C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.KerioInstall.resources
+C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.InstallingKerio.resources
+C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.InstallingOpenConnect.resources
+C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.InstallOpenConnect.resources

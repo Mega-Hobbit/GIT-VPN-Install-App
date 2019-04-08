@@ -25,8 +25,8 @@ namespace VPN_Install_Application
 
         private void btnSkip_Click(object sender, EventArgs e)
         {
-            GlobalProtectInstall formGlobalProtect = new GlobalProtectInstall();
-            formGlobalProtect.Show();
+            KerioInstall formKeiroInstall = new KerioInstall();
+            formKeiroInstall.Show();
             this.Close();
         }
 
@@ -50,6 +50,13 @@ namespace VPN_Install_Application
                 GlobalProtectInstallEnabled.Show();
             }
 
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            InstallFortiClient FortiClientForm = new InstallFortiClient();
+            FortiClientForm.Show();
         }
 
 

@@ -79,6 +79,18 @@
     <Compile Include="InstallingKerio.Designer.cs">
       <DependentUpon>InstallingKerio.cs</DependentUpon>
     </Compile>
+    <Compile Include="InstallingOpenConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallingOpenConnect.Designer.cs">
+      <DependentUpon>InstallingOpenConnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallOpenConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallOpenConnect.Designer.cs">
+      <DependentUpon>InstallOpenConnect.cs</DependentUpon>
+    </Compile>
     <Compile Include="KerioInstall.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +125,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InstallingKerio.resx">
       <DependentUpon>InstallingKerio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallingOpenConnect.resx">
+      <DependentUpon>InstallingOpenConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallOpenConnect.resx">
+      <DependentUpon>InstallOpenConnect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KerioInstall.resx">
       <DependentUpon>KerioInstall.cs</DependentUpon>
@@ -155,6 +173,7 @@
     <None Include="Resources\install_png_file_3d9_icon.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\57-OpenSource_open_source-512.png" />
     <Content Include="Resources\button.jpg" />
     <None Include="Resources\Kerio.png" />
     <None Include="Resources\forticlient.png" />

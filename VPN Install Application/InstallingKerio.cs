@@ -60,8 +60,8 @@ namespace VPN_Install_Application
                     Debug.WriteLine("Finished installing Forticlient. Returning to Installer");
 
 
-                KerioInstall InstallKerio = new KerioInstall();
-                InstallKerio.Show(); //change
+                InstallOpenConnect formOpenConnect = new InstallOpenConnect();
+                formOpenConnect.Show(); //change
                 this.Close();
             }
         

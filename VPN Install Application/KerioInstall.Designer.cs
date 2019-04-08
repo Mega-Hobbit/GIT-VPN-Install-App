@@ -35,13 +35,14 @@
             this.txtFortiClientDisclaimer = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSkip
             // 
-            this.btnSkip.Location = new System.Drawing.Point(158, 284);
+            this.btnSkip.Location = new System.Drawing.Point(148, 284);
             this.btnSkip.Name = "btnSkip";
             this.btnSkip.Size = new System.Drawing.Size(75, 23);
             this.btnSkip.TabIndex = 17;
@@ -51,17 +52,17 @@
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(279, 284);
+            this.btnNext.Location = new System.Drawing.Point(269, 284);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(75, 23);
             this.btnNext.TabIndex = 16;
-            this.btnNext.Text = "Next";
+            this.btnNext.Text = "Next >>";
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(360, 284);
+            this.btnCancel.Location = new System.Drawing.Point(350, 284);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 15;
@@ -72,7 +73,7 @@
             // txtFortiClientDisclaimer
             // 
             this.txtFortiClientDisclaimer.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtFortiClientDisclaimer.Location = new System.Drawing.Point(158, 12);
+            this.txtFortiClientDisclaimer.Location = new System.Drawing.Point(148, 12);
             this.txtFortiClientDisclaimer.Multiline = true;
             this.txtFortiClientDisclaimer.Name = "txtFortiClientDisclaimer";
             this.txtFortiClientDisclaimer.ReadOnly = true;
@@ -86,7 +87,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::VPN_Install_Application.Properties.Resources.Kerio;
-            this.pictureBox2.Location = new System.Drawing.Point(20, 116);
+            this.pictureBox2.Location = new System.Drawing.Point(10, 116);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(132, 132);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -96,12 +97,22 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::VPN_Install_Application.Properties.Resources._2019_03_12_15_22_34;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(140, 66);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(10, 284);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 18;
+            this.btnBack.Text = "<< Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // KerioInstall
             // 
@@ -109,6 +120,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(438, 319);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSkip);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnCancel);
@@ -137,5 +149,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtFortiClientDisclaimer;
+        private System.Windows.Forms.Button btnBack;
     }
 }
