@@ -12,6 +12,9 @@ namespace VPN_Install_Application
 {
     public partial class KerioInstall : Form
     {
+
+        int ExitStatus = 0;
+
         public KerioInstall()
         {
             InitializeComponent();
@@ -21,7 +24,8 @@ namespace VPN_Install_Application
         {
             //show install activated form and hide this one
             {
-                this.Hide();
+                ExitStatus = 1;
+                this.Close();
                 InstallingKerio KerioInstallEnabled = new InstallingKerio();
                 KerioInstallEnabled.Show();
             }
@@ -32,7 +36,8 @@ namespace VPN_Install_Application
             //closes this form and opens the next installer
         {
             InstallOpenConnect formOpenConnect = new InstallOpenConnect(); 
-            formOpenConnect.Show(); 
+            formOpenConnect.Show();
+            ExitStatus = 1;
             this.Close();
         }
 
@@ -45,15 +50,29 @@ namespace VPN_Install_Application
             if (CancelConfirm == DialogResult.Yes)
             {
                 MainMenu.Show();
+                ExitStatus = 1;
                 this.Close();
             }
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            ExitStatus = 1;
+            this.Close();
             GlobalProtectInstall formGlobalProtect = new GlobalProtectInstall();
             formGlobalProtect.Show();
+        }
+
+        private void KerioInstall_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (ExitStatus == 1)
+            {
+
+            }
+            if (ExitStatus == 0)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

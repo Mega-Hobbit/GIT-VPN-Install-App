@@ -120,6 +120,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(438, 319);
+            this.ControlBox = false;
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSkip);
             this.Controls.Add(this.btnNext);
@@ -134,6 +135,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Install Kerio VPN";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.KerioInstall_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

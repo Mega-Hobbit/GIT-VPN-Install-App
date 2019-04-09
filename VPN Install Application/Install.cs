@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace VPN_Install_Application
 {
-
+    
 
     public partial class ExeInstaller : Form
     {
@@ -19,13 +19,13 @@ namespace VPN_Install_Application
 
         string CopyProgress = "0";
 
-
+        bool ExitStatus = false;
 
         public ExeInstaller()
         {
             InitializeComponent();
 
-
+           
 
             using (StreamReader sr = new StreamReader("mtivpnconfig.ini"))
             {
@@ -124,20 +124,40 @@ namespace VPN_Install_Application
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+           
             var confirmResult = MessageBox.Show("Are you sure you want to cancel the installation?", "Cancel Installation", MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
+            {
                 runWorkerThreadThread.Abort();
-            MainActivity MainMenuForm = new MainActivity();
-            MainMenuForm.Show();
-            runWorkerThreadThread.Abort();
-            this.Close();
+                MainActivity MainMenuForm = new MainActivity();
+                MainMenuForm.Show();
+                runWorkerThreadThread.Abort();
+                ExitStatus = true;
+                this.Close();
+            }
+               
             }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
             InstallFortiClient FortiClientForm = new InstallFortiClient();
             FortiClientForm.Show();
+            ExitStatus = true;
             this.Close();
+           
+        }
+
+        private void ExeInstaller_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (ExitStatus == true)
+            {
+
+            }
+            if (ExitStatus == false)
+            {
+                e.Cancel = true;
+            }
+           
         }
     }
 

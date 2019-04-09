@@ -13,72 +13,75 @@ namespace VPN_Install_Application
 {
     public partial class GlobalProtectInstall : Form
     {
+        int ExitStatus = 0;
 
         public GlobalProtectInstall()
         {
             InitializeComponent();
+            
 
+        }
+        //ensures when user clicks X nothing happens
+        private void GlobalProtectInstall_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (ExitStatus == 1)
+            {
+
+            }
+            if (ExitStatus == 0)
+            {
+                e.Cancel = true;
+            }
 
         }
 
-        //opens next form, closes this one
+        //opens next form, hides this one
 
         private void btnSkip_Click(object sender, EventArgs e)
         {
             KerioInstall formKeiroInstall = new KerioInstall();
             formKeiroInstall.Show();
+            ExitStatus = 1;
             this.Close();
         }
 
+        //Hides this form, opens main form after dialog box yes. If no then do nothing.
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            MainActivity MainMenu = new MainActivity();
+            MainActivity MainScreen = new MainActivity();
             var CancelConfirm = MessageBox.Show("Cancel Installation", "Are you sure you want to cancel?", MessageBoxButtons.YesNo);
-            if (CancelConfirm == DialogResult.Yes)
+            if (CancelConfirm == DialogResult.No)
             {
-                MainMenu.Show();
-                this.Close();
+              
             }
+            if (CancelConfirm == DialogResult.Yes)
 
+            {
+                MainScreen.Show();
+                ExitStatus = 1;
+                this.Close();
+               
+            }
         }
-
+        //Opens installer form for this and hides current form
         private void btnNext_Click(object sender, EventArgs e)
         {
             {
-                this.Hide();
+                ExitStatus = 1;
+                this.Close();
                 InstallingGlobalProtect GlobalProtectInstallEnabled = new InstallingGlobalProtect();
                 GlobalProtectInstallEnabled.Show();
             }
 
         }
-
+        //Hides current form and opens previous form
         private void btnBack_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            ExitStatus = 1;
+            this.Close();
             InstallFortiClient FortiClientForm = new InstallFortiClient();
             FortiClientForm.Show();
         }
-
-
-
-        /* private void InstallerClosing(object sender, FormClosedEventArgs e)
-         {
-             MainActivity MainScreen = new MainActivity();
-             if (string.Equals((sender as Button).Name, @"CloseButton"))
-             {
-
-                 if (MessageBox.Show("Are you sure you want to cancel the installation?", "Cancel Installation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
-                 {
-                     MainScreen.Show();
-                     this.Close();
-                 }
-                 else
-                 {
-                     MainScreen.Show();
-                     this.Close();
-                 }
-             }
-        }*/
 
     }
 }

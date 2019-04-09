@@ -12,6 +12,9 @@ namespace VPN_Install_Application
 {
     public partial class InstallOpenConnect : Form
     {
+
+        int ExitStatus = 0;
+
         public InstallOpenConnect()
         {
             InitializeComponent();
@@ -24,13 +27,15 @@ namespace VPN_Install_Application
             if (CancelConfirm == DialogResult.Yes)
             {
                 MainMenu.Show();
+                ExitStatus = 1;
                 this.Close();
             }
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            this.Hide(); 
+            ExitStatus = 1;
+            this.Close(); 
             InstallingOpenConnect OpenConnectInstallEnabled = new InstallingOpenConnect(); 
             OpenConnectInstallEnabled.Show(); 
 
@@ -41,14 +46,28 @@ namespace VPN_Install_Application
         {
             GlobalProtectInstall formGlobalProtect = new GlobalProtectInstall(); //Change this
             formGlobalProtect.Show(); //Change this
+            ExitStatus = 1;
             this.Close();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            ExitStatus = 1;
+            this.Close();
             KerioInstall formKerio = new KerioInstall();
             formKerio.Show();
+        }
+
+        private void InstallOpenConnect_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (ExitStatus == 1)
+            {
+
+            }
+            if (ExitStatus == 0)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

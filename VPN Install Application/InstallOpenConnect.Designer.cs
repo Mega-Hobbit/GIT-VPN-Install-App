@@ -132,6 +132,7 @@
             this.Name = "InstallOpenConnect";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Install OpenConnect VPN";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.InstallOpenConnect_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

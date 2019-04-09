@@ -118,6 +118,7 @@
             this.Name = "ExeInstaller";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MTI VPN Installer";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ExeInstaller_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -134,6 +134,7 @@
             this.Name = "GlobalProtectInstall";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Install Global Protect VPN";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GlobalProtectInstall_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

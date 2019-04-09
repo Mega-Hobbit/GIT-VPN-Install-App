@@ -25,7 +25,7 @@ namespace VPN_Install_Application
         {
             GlobalProtectInstall formGlobalProtect = new GlobalProtectInstall();
             formGlobalProtect.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace VPN_Install_Application
             if (CancelConfirm == DialogResult.Yes)
             {
                 MainMenu.Show();
-                this.Close();
+                this.Hide();
             }
                 
         }
@@ -49,5 +49,9 @@ namespace VPN_Install_Application
 
         }
 
+        private void InstallFortiClient_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+        }
     }
 }
