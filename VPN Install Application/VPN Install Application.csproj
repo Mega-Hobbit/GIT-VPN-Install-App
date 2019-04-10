@@ -79,17 +79,53 @@
     <Compile Include="InstallingKerio.Designer.cs">
       <DependentUpon>InstallingKerio.cs</DependentUpon>
     </Compile>
+    <Compile Include="InstallingNetExtender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallingNetExtender.Designer.cs">
+      <DependentUpon>InstallingNetExtender.cs</DependentUpon>
+    </Compile>
     <Compile Include="InstallingOpenConnect.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="InstallingOpenConnect.Designer.cs">
       <DependentUpon>InstallingOpenConnect.cs</DependentUpon>
     </Compile>
+    <Compile Include="InstallingOpenVPN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallingOpenVPN.Designer.cs">
+      <DependentUpon>InstallingOpenVPN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallingShrewSoft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallingShrewSoft.Designer.cs">
+      <DependentUpon>InstallingShrewSoft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallNetExtender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallNetExtender.Designer.cs">
+      <DependentUpon>InstallNetExtender.cs</DependentUpon>
+    </Compile>
     <Compile Include="InstallOpenConnect.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="InstallOpenConnect.Designer.cs">
       <DependentUpon>InstallOpenConnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallOpenVPN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallOpenVPN.Designer.cs">
+      <DependentUpon>InstallOpenVPN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallShrewSoft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallShrewSoft.Designer.cs">
+      <DependentUpon>InstallShrewSoft.cs</DependentUpon>
     </Compile>
     <Compile Include="KerioInstall.cs">
       <SubType>Form</SubType>
@@ -126,11 +162,29 @@
     <EmbeddedResource Include="InstallingKerio.resx">
       <DependentUpon>InstallingKerio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InstallingNetExtender.resx">
+      <DependentUpon>InstallingNetExtender.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InstallingOpenConnect.resx">
       <DependentUpon>InstallingOpenConnect.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InstallingOpenVPN.resx">
+      <DependentUpon>InstallingOpenVPN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallingShrewSoft.resx">
+      <DependentUpon>InstallingShrewSoft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallNetExtender.resx">
+      <DependentUpon>InstallNetExtender.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InstallOpenConnect.resx">
       <DependentUpon>InstallOpenConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallOpenVPN.resx">
+      <DependentUpon>InstallOpenVPN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallShrewSoft.resx">
+      <DependentUpon>InstallShrewSoft.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KerioInstall.resx">
       <DependentUpon>KerioInstall.cs</DependentUpon>
@@ -173,6 +227,9 @@
     <None Include="Resources\install_png_file_3d9_icon.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\dell-logo-png-open-2000.png" />
+    <None Include="Resources\shrewsoft.png" />
+    <None Include="Resources\kisspng-openvpn-virtual-private-network-android-client-com-5afb9e813350e0.3371909415264395532102.png" />
     <None Include="Resources\57-OpenSource_open_source-512.png" />
     <Content Include="Resources\button.jpg" />
     <None Include="Resources\Kerio.png" />

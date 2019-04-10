@@ -11,24 +11,24 @@ using System.Windows.Forms;
 
 namespace VPN_Install_Application
 {
-    public partial class InstallingOpenConnect : Form
+    public partial class InstallingNetExtender : Form
     {
-
         int ProcessQuit = 0;
-        public InstallingOpenConnect()
+
+        public InstallingNetExtender()
         {
             InitializeComponent();
         }
 
-        private void InstallingOpenConnect_Load(object sender, EventArgs e)
+        private void InstallingNetExtender_Load(object sender, EventArgs e)
         {
             this.Show();
             this.BringToFront();
 
 
 
-            var process = Process.Start("C:\\RDP\\VPNInstallations\\openconnect-gui-1.5.3-win64.exe");
-            Debug.WriteLine("Running OpenConnect");
+            var process = Process.Start("C:\\RDP\\VPNInstallations\\NXSetupU.exe");
+            Debug.WriteLine("Running Net Extender");
 
 
             do
@@ -49,19 +49,16 @@ namespace VPN_Install_Application
 
         }
 
-
-
-
-
         public void KillInstaller()
         {
             if (ProcessQuit == 1)
-                Debug.WriteLine("Finished installing OpenConnect. Returning to Installer");
+                Debug.WriteLine("Finished installing Net Extender. Returning to Installer");
 
 
-            InstallOpenVPN InstallOpenVPNForm = new InstallOpenVPN(); 
-            InstallOpenVPNForm.Show();
+            GlobalProtectInstall InstallGlobalProtect = new GlobalProtectInstall(); //Change this
+            InstallGlobalProtect.Show(); // Change this
             this.Close();
         }
+
     }
 }

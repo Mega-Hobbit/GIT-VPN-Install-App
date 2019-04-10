@@ -93,6 +93,16 @@ namespace VPN_Install_Application.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dell_logo_png_open_2000 {
+            get {
+                object obj = ResourceManager.GetObject("dell-logo-png-open-2000", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap forticlient {
             get {
                 object obj = ResourceManager.GetObject("forticlient", resourceCulture);
@@ -126,6 +136,27 @@ namespace VPN_Install_Application.Properties {
         internal static System.Drawing.Bitmap Kerio {
             get {
                 object obj = ResourceManager.GetObject("Kerio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_openvpn_virtual_private_network_android_client_com_5afb9e813350e0_3371909415264395532102 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-openvpn-virtual-private-network-android-client-com-5afb9e813350e0.3371909" +
+                        "415264395532102", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shrewsoft {
+            get {
+                object obj = ResourceManager.GetObject("shrewsoft", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

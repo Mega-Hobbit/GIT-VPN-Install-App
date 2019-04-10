@@ -39,3 +39,7 @@ C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Applica
 C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.InstallingKerio.resources
 C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.InstallingOpenConnect.resources
 C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.InstallOpenConnect.resources
+C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.InstallingOpenVPN.resources
+C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.InstallOpenVPN.resources
+C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.InstallingShrewSoft.resources
+C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.InstallShrewSoft.resources

@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace VPN_Install_Application
 {
-    public partial class InstallOpenConnect : Form
+    public partial class InstallNetExtender : Form
     {
-
         int ExitStatus = 0;
 
-        public InstallOpenConnect()
+        public InstallNetExtender()
         {
             InitializeComponent();
         }
@@ -35,17 +34,17 @@ namespace VPN_Install_Application
         private void btnNext_Click(object sender, EventArgs e)
         {
             ExitStatus = 1;
-            this.Close(); 
-            InstallingOpenConnect OpenConnectInstallEnabled = new InstallingOpenConnect(); 
-            OpenConnectInstallEnabled.Show(); 
+            this.Close();
+            InstallingNetExtender NetExtenderInstallEnabled = new InstallingNetExtender();
+            NetExtenderInstallEnabled.Show();
 
 
         }
 
         private void btnSkip_Click(object sender, EventArgs e)
         {
-            InstallOpenVPN formOpenVPN = new InstallOpenVPN(); 
-            formOpenVPN.Show(); 
+            GlobalProtectInstall formGlobalProtect = new GlobalProtectInstall(); //Change this
+            formGlobalProtect.Show(); //Change this
             ExitStatus = 1;
             this.Close();
         }
@@ -54,8 +53,8 @@ namespace VPN_Install_Application
         {
             ExitStatus = 1;
             this.Close();
-            KerioInstall formKerio = new KerioInstall();
-            formKerio.Show();
+            InstallShrewSoft formShrewSoft = new InstallShrewSoft();
+            formShrewSoft.Show();
         }
 
         private void InstallOpenConnect_FormClosing(object sender, FormClosingEventArgs e)

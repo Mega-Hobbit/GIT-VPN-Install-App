@@ -11,24 +11,24 @@ using System.Windows.Forms;
 
 namespace VPN_Install_Application
 {
-    public partial class InstallingOpenConnect : Form
+    public partial class InstallingShrewSoft : Form
     {
-
         int ProcessQuit = 0;
-        public InstallingOpenConnect()
+
+        public InstallingShrewSoft()
         {
             InitializeComponent();
         }
 
-        private void InstallingOpenConnect_Load(object sender, EventArgs e)
+        private void InstallingShrewSoft_Load(object sender, EventArgs e)
         {
             this.Show();
             this.BringToFront();
 
 
-
-            var process = Process.Start("C:\\RDP\\VPNInstallations\\openconnect-gui-1.5.3-win64.exe");
-            Debug.WriteLine("Running OpenConnect");
+            //Start Installer
+            var process = Process.Start("C:\\RDP\\VPNInstallations\\vpn-client-2.2.2-release.exe");
+            Debug.WriteLine("Running ShrewSoft");
 
 
             do
@@ -46,22 +46,19 @@ namespace VPN_Install_Application
             ProcessQuit = 1;
             KillInstaller();
 
-
+            //Wait until ShrewSoft quits, then run Kill Installer
         }
-
-
-
-
 
         public void KillInstaller()
         {
             if (ProcessQuit == 1)
-                Debug.WriteLine("Finished installing OpenConnect. Returning to Installer");
+                Debug.WriteLine("Finished installing ShrewSoft. Returning to Installer");
 
 
-            InstallOpenVPN InstallOpenVPNForm = new InstallOpenVPN(); 
-            InstallOpenVPNForm.Show();
+            InstallOpenConnect formOpenConnect = new InstallOpenConnect(); //Change
+            formOpenConnect.Show(); //change
             this.Close();
         }
     }
+    
 }
