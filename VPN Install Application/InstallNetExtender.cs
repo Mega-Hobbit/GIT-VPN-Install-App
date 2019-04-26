@@ -43,8 +43,8 @@ namespace VPN_Install_Application
 
         private void btnSkip_Click(object sender, EventArgs e)
         {
-            GlobalProtectInstall formGlobalProtect = new GlobalProtectInstall(); //Change this
-            formGlobalProtect.Show(); //Change this
+            Instructions InstructionsForm = new Instructions();
+            InstructionsForm.Show();
             ExitStatus = 1;
             this.Close();
         }
@@ -57,7 +57,7 @@ namespace VPN_Install_Application
             formShrewSoft.Show();
         }
 
-        private void InstallOpenConnect_FormClosing(object sender, FormClosingEventArgs e)
+        private void InstallNetExtender_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (ExitStatus == 1)
             {

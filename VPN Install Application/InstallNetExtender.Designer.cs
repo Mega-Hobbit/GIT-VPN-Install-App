@@ -132,6 +132,7 @@
             this.Name = "InstallNetExtender";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Install SonicWall Net Extender";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.InstallNetExtender_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

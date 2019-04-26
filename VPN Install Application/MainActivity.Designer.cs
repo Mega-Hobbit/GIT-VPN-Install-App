@@ -33,6 +33,11 @@
             this.Install = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.chkANZ = new System.Windows.Forms.CheckBox();
+            this.chkNA = new System.Windows.Forms.CheckBox();
+            this.chkUK = new System.Windows.Forms.CheckBox();
+            this.chkEU = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,7 +55,7 @@
             // Install
             // 
             this.Install.Image = global::VPN_Install_Application.Properties.Resources.button;
-            this.Install.Location = new System.Drawing.Point(12, 92);
+            this.Install.Location = new System.Drawing.Point(12, 195);
             this.Install.Name = "Install";
             this.Install.Size = new System.Drawing.Size(137, 45);
             this.Install.TabIndex = 2;
@@ -61,7 +66,7 @@
             // Exit
             // 
             this.Exit.Image = global::VPN_Install_Application.Properties.Resources.button;
-            this.Exit.Location = new System.Drawing.Point(177, 92);
+            this.Exit.Location = new System.Drawing.Point(177, 195);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(137, 45);
             this.Exit.TabIndex = 3;
@@ -79,13 +84,76 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(114, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Select areas to install";
+            // 
+            // chkANZ
+            // 
+            this.chkANZ.AutoSize = true;
+            this.chkANZ.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.chkANZ.Location = new System.Drawing.Point(69, 88);
+            this.chkANZ.Name = "chkANZ";
+            this.chkANZ.Size = new System.Drawing.Size(48, 17);
+            this.chkANZ.TabIndex = 5;
+            this.chkANZ.Text = "ANZ";
+            this.chkANZ.UseVisualStyleBackColor = true;
+            this.chkANZ.CheckedChanged += new System.EventHandler(this.chkANZ_CheckedChanged);
+            // 
+            // chkNA
+            // 
+            this.chkNA.AutoSize = true;
+            this.chkNA.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.chkNA.Location = new System.Drawing.Point(69, 111);
+            this.chkNA.Name = "chkNA";
+            this.chkNA.Size = new System.Drawing.Size(41, 17);
+            this.chkNA.TabIndex = 5;
+            this.chkNA.Text = "NA";
+            this.chkNA.UseVisualStyleBackColor = true;
+            this.chkNA.CheckedChanged += new System.EventHandler(this.chkNA_CheckedChanged);
+            // 
+            // chkUK
+            // 
+            this.chkUK.AutoSize = true;
+            this.chkUK.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.chkUK.Location = new System.Drawing.Point(69, 134);
+            this.chkUK.Name = "chkUK";
+            this.chkUK.Size = new System.Drawing.Size(41, 17);
+            this.chkUK.TabIndex = 5;
+            this.chkUK.Text = "UK";
+            this.chkUK.UseVisualStyleBackColor = true;
+            this.chkUK.CheckedChanged += new System.EventHandler(this.chkUK_CheckedChanged);
+            // 
+            // chkEU
+            // 
+            this.chkEU.AutoSize = true;
+            this.chkEU.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.chkEU.Location = new System.Drawing.Point(69, 158);
+            this.chkEU.Name = "chkEU";
+            this.chkEU.Size = new System.Drawing.Size(41, 17);
+            this.chkEU.TabIndex = 6;
+            this.chkEU.Text = "EU";
+            this.chkEU.UseVisualStyleBackColor = true;
+            this.chkEU.CheckedChanged += new System.EventHandler(this.chkEU_CheckedChanged);
+            // 
             // MainActivity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(326, 149);
+            this.ClientSize = new System.Drawing.Size(326, 252);
             this.ControlBox = false;
+            this.Controls.Add(this.chkEU);
+            this.Controls.Add(this.chkUK);
+            this.Controls.Add(this.chkNA);
+            this.Controls.Add(this.chkANZ);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.Install);
             this.Controls.Add(this.HeadingLabel);
@@ -109,6 +177,11 @@
         private System.Windows.Forms.Label HeadingLabel;
         private System.Windows.Forms.Button Install;
         private System.Windows.Forms.Button Exit;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox chkANZ;
+        private System.Windows.Forms.CheckBox chkNA;
+        private System.Windows.Forms.CheckBox chkUK;
+        private System.Windows.Forms.CheckBox chkEU;
     }
 }
 

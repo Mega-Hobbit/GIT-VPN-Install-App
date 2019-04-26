@@ -43,3 +43,12 @@ C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Applica
 C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.InstallOpenVPN.resources
 C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.InstallingShrewSoft.resources
 C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.InstallShrewSoft.resources
+C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.InstallingNetExtender.resources
+C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.InstallNetExtender.resources
+C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.Instructions.resources
+C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\bin\Debug\VPN Install Application.exe.manifest
+C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\bin\Debug\VPN Install Application.application
+C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN Install Application.TrustInfo.xml
+C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN Install Application.exe.manifest
+C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN Install Application.application
+C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.frmDecider.resources

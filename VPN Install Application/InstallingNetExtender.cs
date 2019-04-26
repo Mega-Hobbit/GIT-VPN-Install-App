@@ -55,8 +55,8 @@ namespace VPN_Install_Application
                 Debug.WriteLine("Finished installing Net Extender. Returning to Installer");
 
 
-            GlobalProtectInstall InstallGlobalProtect = new GlobalProtectInstall(); //Change this
-            InstallGlobalProtect.Show(); // Change this
+            Instructions InstructionsForm = new Instructions(); 
+            InstructionsForm.Show(); 
             this.Close();
         }
 

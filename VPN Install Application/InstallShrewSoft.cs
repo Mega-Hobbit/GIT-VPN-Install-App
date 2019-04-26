@@ -57,7 +57,7 @@ namespace VPN_Install_Application
             formOpenVPN.Show();
         }
 
-        private void InstallOpenConnect_FormClosing(object sender, FormClosingEventArgs e)
+        private void InstallShrewSoft_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (ExitStatus == 1)
             {
