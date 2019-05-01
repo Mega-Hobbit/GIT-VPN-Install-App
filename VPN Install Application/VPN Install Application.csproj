@@ -81,53 +81,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmDecider.cs">
+    <Compile Include="runVPNInstallers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDecider.Designer.cs">
-      <DependentUpon>frmDecider.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GlobalProtectInstall.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GlobalProtectInstall.Designer.cs">
-      <DependentUpon>GlobalProtectInstall.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InstallFortiClient.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InstallFortiClient.Designer.cs">
-      <DependentUpon>InstallFortiClient.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InstallingFortiClient.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InstallingFortiClient.Designer.cs">
-      <DependentUpon>InstallingFortiClient.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InstallingGlobalProtect.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InstallingGlobalProtect.Designer.cs">
-      <DependentUpon>InstallingGlobalProtect.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InstallingKerio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InstallingKerio.Designer.cs">
-      <DependentUpon>InstallingKerio.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InstallingNetExtender.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InstallingNetExtender.Designer.cs">
-      <DependentUpon>InstallingNetExtender.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InstallingOpenConnect.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InstallingOpenConnect.Designer.cs">
-      <DependentUpon>InstallingOpenConnect.cs</DependentUpon>
+    <Compile Include="runVPNInstallers.Designer.cs">
+      <DependentUpon>runVPNInstallers.cs</DependentUpon>
     </Compile>
     <Compile Include="InstallingOpenVPN.cs">
       <SubType>Form</SubType>
@@ -135,47 +93,11 @@
     <Compile Include="InstallingOpenVPN.Designer.cs">
       <DependentUpon>InstallingOpenVPN.cs</DependentUpon>
     </Compile>
-    <Compile Include="InstallingShrewSoft.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InstallingShrewSoft.Designer.cs">
-      <DependentUpon>InstallingShrewSoft.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InstallNetExtender.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InstallNetExtender.Designer.cs">
-      <DependentUpon>InstallNetExtender.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InstallOpenConnect.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InstallOpenConnect.Designer.cs">
-      <DependentUpon>InstallOpenConnect.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InstallOpenVPN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InstallOpenVPN.Designer.cs">
-      <DependentUpon>InstallOpenVPN.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InstallShrewSoft.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InstallShrewSoft.Designer.cs">
-      <DependentUpon>InstallShrewSoft.cs</DependentUpon>
-    </Compile>
     <Compile Include="Instructions.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Instructions.Designer.cs">
       <DependentUpon>Instructions.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KerioInstall.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KerioInstall.Designer.cs">
-      <DependentUpon>KerioInstall.cs</DependentUpon>
     </Compile>
     <Compile Include="MainActivity.cs">
       <SubType>Form</SubType>
@@ -191,53 +113,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmDecider.resx">
-      <DependentUpon>frmDecider.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GlobalProtectInstall.resx">
-      <DependentUpon>GlobalProtectInstall.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InstallFortiClient.resx">
-      <DependentUpon>InstallFortiClient.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InstallingFortiClient.resx">
-      <DependentUpon>InstallingFortiClient.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InstallingGlobalProtect.resx">
-      <DependentUpon>InstallingGlobalProtect.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InstallingKerio.resx">
-      <DependentUpon>InstallingKerio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InstallingNetExtender.resx">
-      <DependentUpon>InstallingNetExtender.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InstallingOpenConnect.resx">
-      <DependentUpon>InstallingOpenConnect.cs</DependentUpon>
+    <EmbeddedResource Include="runVPNInstallers.resx">
+      <DependentUpon>runVPNInstallers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InstallingOpenVPN.resx">
       <DependentUpon>InstallingOpenVPN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InstallingShrewSoft.resx">
-      <DependentUpon>InstallingShrewSoft.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InstallNetExtender.resx">
-      <DependentUpon>InstallNetExtender.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InstallOpenConnect.resx">
-      <DependentUpon>InstallOpenConnect.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InstallOpenVPN.resx">
-      <DependentUpon>InstallOpenVPN.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InstallShrewSoft.resx">
-      <DependentUpon>InstallShrewSoft.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Instructions.resx">
       <DependentUpon>Instructions.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KerioInstall.resx">
-      <DependentUpon>KerioInstall.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainActivity.resx">
       <DependentUpon>MainActivity.cs</DependentUpon>

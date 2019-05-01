@@ -123,8 +123,8 @@ namespace VPN_Install_Application
                 Debug.WriteLine("Finished installing OpenVPN. Returning to Installer");
 
 
-            InstallShrewSoft formShrewSoft = new InstallShrewSoft(); 
-            formShrewSoft.Show(); 
+            //InstallShrewSoft formShrewSoft = new InstallShrewSoft(); 
+            //formShrewSoft.Show(); 
             this.Close();
         }
     }

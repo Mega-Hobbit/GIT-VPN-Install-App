@@ -23,8 +23,8 @@ namespace VPN_Install_Application
         {
             ExitStatus = 1;
             this.Close();
-            InstallNetExtender formNetExtender = new InstallNetExtender();
-            formNetExtender.Show();
+            //InstallNetExtender formNetExtender = new InstallNetExtender();
+            //formNetExtender.Show();
         }
 
         

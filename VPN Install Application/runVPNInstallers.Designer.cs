@@ -1,6 +1,6 @@
 ﻿namespace VPN_Install_Application
 {
-    partial class InstallOpenVPN
+    partial class runVPNInstallers
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InstallOpenVPN));
-            this.btnBack = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(runVPNInstallers));
             this.btnSkip = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.txtFortiClientDisclaimer = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnBack
-            // 
-            this.btnBack.Location = new System.Drawing.Point(12, 284);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(75, 23);
-            this.btnBack.TabIndex = 19;
-            this.btnBack.Text = "<< Back";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnSkip
             // 
             this.btnSkip.Location = new System.Drawing.Point(148, 284);
             this.btnSkip.Name = "btnSkip";
             this.btnSkip.Size = new System.Drawing.Size(75, 23);
-            this.btnSkip.TabIndex = 18;
+            this.btnSkip.TabIndex = 11;
             this.btnSkip.Text = "Skip";
             this.btnSkip.UseVisualStyleBackColor = true;
             this.btnSkip.Click += new System.EventHandler(this.btnSkip_Click);
@@ -65,7 +55,7 @@
             this.btnNext.Location = new System.Drawing.Point(269, 284);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(75, 23);
-            this.btnNext.TabIndex = 17;
+            this.btnNext.TabIndex = 10;
             this.btnNext.Text = "Next >>";
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
@@ -75,49 +65,57 @@
             this.btnCancel.Location = new System.Drawing.Point(350, 284);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 16;
+            this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // txtFortiClientDisclaimer
+            // textBox1
             // 
-            this.txtFortiClientDisclaimer.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtFortiClientDisclaimer.Location = new System.Drawing.Point(148, 12);
-            this.txtFortiClientDisclaimer.Multiline = true;
-            this.txtFortiClientDisclaimer.Name = "txtFortiClientDisclaimer";
-            this.txtFortiClientDisclaimer.ReadOnly = true;
-            this.txtFortiClientDisclaimer.Size = new System.Drawing.Size(277, 261);
-            this.txtFortiClientDisclaimer.TabIndex = 13;
-            this.txtFortiClientDisclaimer.TabStop = false;
-            this.txtFortiClientDisclaimer.Text = resources.GetString("txtFortiClientDisclaimer.Text");
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.textBox1.Location = new System.Drawing.Point(148, 12);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(277, 261);
+            this.textBox1.TabIndex = 6;
+            this.textBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::VPN_Install_Application.Properties.Resources.kisspng_openvpn_virtual_private_network_android_client_com_5afb9e813350e0_3371909415264395532102;
             this.pictureBox2.Location = new System.Drawing.Point(10, 116);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(132, 132);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::VPN_Install_Application.Properties.Resources._2019_03_12_15_22_34;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(2, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(140, 66);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // InstallOpenVPN
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(10, 284);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 12;
+            this.btnBack.Text = "<< Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // runVPNInstallers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(434, 315);
+            this.ClientSize = new System.Drawing.Size(438, 319);
             this.ControlBox = false;
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSkip);
@@ -125,15 +123,14 @@
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txtFortiClientDisclaimer);
+            this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "InstallOpenVPN";
-            this.ShowIcon = false;
+            this.Name = "runVPNInstallers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Install Open VPN";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.InstallOpenVPN_FormClosing);
+            this.Text = "Install VPN Clients";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.runVPNnstall_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -143,12 +140,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnSkip;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtFortiClientDisclaimer;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnBack;
     }
 }
