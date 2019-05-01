@@ -43,7 +43,7 @@
             this.HeadingLabel.AutoSize = true;
             this.HeadingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HeadingLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.HeadingLabel.Location = new System.Drawing.Point(27, 12);
+            this.HeadingLabel.Location = new System.Drawing.Point(27, 11);
             this.HeadingLabel.Name = "HeadingLabel";
             this.HeadingLabel.Size = new System.Drawing.Size(132, 20);
             this.HeadingLabel.TabIndex = 1;
@@ -53,9 +53,9 @@
             // 
             this.Install.Enabled = false;
             this.Install.Image = global::VPN_Install_Application.Properties.Resources.button;
-            this.Install.Location = new System.Drawing.Point(12, 195);
+            this.Install.Location = new System.Drawing.Point(12, 180);
             this.Install.Name = "Install";
-            this.Install.Size = new System.Drawing.Size(137, 45);
+            this.Install.Size = new System.Drawing.Size(137, 42);
             this.Install.TabIndex = 2;
             this.Install.Text = "Install";
             this.Install.UseVisualStyleBackColor = true;
@@ -64,9 +64,9 @@
             // Exit
             // 
             this.Exit.Image = global::VPN_Install_Application.Properties.Resources.button;
-            this.Exit.Location = new System.Drawing.Point(177, 195);
+            this.Exit.Location = new System.Drawing.Point(177, 180);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(137, 45);
+            this.Exit.Size = new System.Drawing.Size(137, 42);
             this.Exit.TabIndex = 3;
             this.Exit.Text = "Exit";
             this.Exit.UseVisualStyleBackColor = true;
@@ -75,9 +75,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::VPN_Install_Application.Properties.Resources._2019_03_12_15_22_34;
-            this.pictureBox1.Location = new System.Drawing.Point(204, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(204, 11);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(110, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(110, 46);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -86,9 +86,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(28, 49);
+            this.label1.Location = new System.Drawing.Point(28, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 13);
+            this.label1.Size = new System.Drawing.Size(100, 12);
             this.label1.TabIndex = 4;
             this.label1.Text = "Select areas to install";
             // 
@@ -96,18 +96,19 @@
             // 
             this.checkedListBox1.CheckOnClick = true;
             this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(31, 81);
+            this.checkedListBox1.Location = new System.Drawing.Point(31, 75);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(250, 94);
+            this.checkedListBox1.Size = new System.Drawing.Size(250, 72);
             this.checkedListBox1.TabIndex = 5;
             this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // MainActivity
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(326, 252);
+            this.ClientSize = new System.Drawing.Size(326, 233);
             this.ControlBox = false;
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.label1);

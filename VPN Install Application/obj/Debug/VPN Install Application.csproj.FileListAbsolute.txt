@@ -60,3 +60,21 @@ C:\Users\wlam\Documents\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VP
 C:\Users\wlam\Documents\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VPN Install Application.exe.manifest
 C:\Users\wlam\Documents\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VPN Install Application.application
 C:\Users\wlam\Documents\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VPN_Install_Application.runVPNInstallers.resources
+D:\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VPN_Install_Application.runVPNInstallers.resources
+D:\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VPN_Install_Application.Instructions.resources
+D:\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VPN_Install_Application.MainActivity.resources
+D:\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VPN_Install_Application.ExeInstaller.resources
+D:\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VPN_Install_Application.Properties.Resources.resources
+D:\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VPN Install Application.csproj.GenerateResource.Cache
+D:\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VPN Install Application.csproj.CoreCompileInputs.cache
+D:\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VPN Install Application.TrustInfo.xml
+D:\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VPN Install Application.exe
+D:\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VPN Install Application.pdb
+D:\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VPN Install Application.csprojAssemblyReference.cache
+D:\GIT-VPN-Install-App\VPN Install Application\bin\Debug\VPN Install Application.exe.config
+D:\GIT-VPN-Install-App\VPN Install Application\bin\Debug\VPN Install Application.exe.manifest
+D:\GIT-VPN-Install-App\VPN Install Application\bin\Debug\VPN Install Application.application
+D:\GIT-VPN-Install-App\VPN Install Application\bin\Debug\VPN Install Application.exe
+D:\GIT-VPN-Install-App\VPN Install Application\bin\Debug\VPN Install Application.pdb
+D:\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VPN Install Application.exe.manifest
+D:\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VPN Install Application.application

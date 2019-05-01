@@ -42,9 +42,9 @@
             // 
             // btnSkip
             // 
-            this.btnSkip.Location = new System.Drawing.Point(148, 284);
+            this.btnSkip.Location = new System.Drawing.Point(148, 262);
             this.btnSkip.Name = "btnSkip";
-            this.btnSkip.Size = new System.Drawing.Size(75, 23);
+            this.btnSkip.Size = new System.Drawing.Size(75, 21);
             this.btnSkip.TabIndex = 11;
             this.btnSkip.Text = "Skip";
             this.btnSkip.UseVisualStyleBackColor = true;
@@ -52,9 +52,9 @@
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(269, 284);
+            this.btnNext.Location = new System.Drawing.Point(269, 262);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(75, 23);
+            this.btnNext.Size = new System.Drawing.Size(75, 21);
             this.btnNext.TabIndex = 10;
             this.btnNext.Text = "Next >>";
             this.btnNext.UseVisualStyleBackColor = true;
@@ -62,9 +62,9 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(350, 284);
+            this.btnCancel.Location = new System.Drawing.Point(350, 262);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(75, 21);
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -73,19 +73,19 @@
             // textBox1
             // 
             this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox1.Location = new System.Drawing.Point(148, 12);
+            this.textBox1.Location = new System.Drawing.Point(148, 11);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(277, 261);
+            this.textBox1.Size = new System.Drawing.Size(277, 241);
             this.textBox1.TabIndex = 6;
             this.textBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(10, 116);
+            this.pictureBox2.Location = new System.Drawing.Point(10, 107);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(132, 132);
+            this.pictureBox2.Size = new System.Drawing.Size(132, 122);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -93,18 +93,19 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(2, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 11);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(140, 66);
+            this.pictureBox1.Size = new System.Drawing.Size(140, 61);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(10, 284);
+            this.btnBack.Enabled = false;
+            this.btnBack.Location = new System.Drawing.Point(10, 262);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.Size = new System.Drawing.Size(75, 21);
             this.btnBack.TabIndex = 12;
             this.btnBack.Text = "<< Back";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -112,10 +113,11 @@
             // 
             // runVPNInstallers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(438, 319);
+            this.ClientSize = new System.Drawing.Size(438, 294);
             this.ControlBox = false;
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSkip);

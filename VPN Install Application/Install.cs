@@ -89,10 +89,9 @@ namespace VPN_Install_Application
 
         public void CopyFiles(DirectoryInfo filesource, DirectoryInfo filetarget)
         {
-            Directory.CreateDirectory(filetarget.FullName);
-
             try
             {
+                Directory.CreateDirectory(filetarget.FullName);
                 //Copy files from Source Folder to Target
                 foreach (DirectoryInfo diSourceSubDir in filesource.GetDirectories())
                 {
@@ -130,7 +129,6 @@ namespace VPN_Install_Application
                 CopyThread.Abort();
                 MainActivity MainMenuForm = new MainActivity();
                 MainMenuForm.Show();
-                CopyThread.Abort();
                 buttonWasClicked = true;
                 this.Close();
             }
@@ -142,8 +140,8 @@ namespace VPN_Install_Application
         {
              runVPNInstallers runNext = new runVPNInstallers(pass_list);
              runNext.Show();
-
-             this.Close(); 
+            buttonWasClicked = true;
+            this.Close(); 
         }
 
         private void ExeInstaller_FormClosing(object sender, FormClosingEventArgs e)
