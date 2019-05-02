@@ -52,7 +52,6 @@ C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Applica
 C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN Install Application.exe.manifest
 C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN Install Application.application
 C:\Users\bmatthys\Documents\VPN Projects\GIT VPN Install App\VPN Install Application\obj\Debug\VPN_Install_Application.frmDecider.resources
-C:\Users\wlam\Documents\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VPN_Install_Application.InstallingOpenVPN.resources
 C:\Users\wlam\Documents\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VPN_Install_Application.Instructions.resources
 C:\Users\wlam\Documents\GIT-VPN-Install-App\VPN Install Application\bin\Debug\VPN Install Application.exe.manifest
 C:\Users\wlam\Documents\GIT-VPN-Install-App\VPN Install Application\bin\Debug\VPN Install Application.application
