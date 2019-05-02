@@ -117,6 +117,45 @@ namespace VPN_Install_Application
 
         }
 
+        private string installer;
+
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            if (installer_order < installerlength)
+            {
+                installer_order = installer_order + 1;
+
+            }
+            else
+            {
+                config_order = config_order + 1;
+                installer_order = 0;
+            }
+
+            try
+            {
+                try
+                {
+                    var process = Process.Start(installer);
+                    this.Hide();
+                    process.WaitForExit();
+                    this.Show();
+                }
+                catch (Exception) {
+                    MessageBox.Show("Unable to run" + installer);
+                };
+                goNext();
+            }
+            catch (Exception)
+            {
+                Instructions inst = new Instructions();
+                inst.Show();
+                buttonWasClicked = true;
+                this.Close();
+            }
+        }
+
         private void btnSkip_Click(object sender, EventArgs e)
         {
             if (installer_order < installerlength)
@@ -174,52 +213,7 @@ namespace VPN_Install_Application
 
 
         
-        private string installer;
 
-        //Opens installer form for this and hides current form
-
-        private void btnNext_Click(object sender, EventArgs e)
-        {
-            if (installer_order < installerlength)
-            {
-                installer_order = installer_order + 1;
-                try
-                {
-                    var process = Process.Start(installer);
-                    this.Hide();
-                    process.WaitForExit();
-                    this.Show();
-                    goNext();
-                }
-                catch (Exception)
-                {
-                    Instructions inst = new Instructions();
-                    inst.Show();
-                    buttonWasClicked = true;
-                    this.Close();
-                }
-            }
-            else
-            {
-                config_order = config_order + 1;
-                installer_order = 0;
-                    try
-                    {
-                        var process = Process.Start(installer);
-                        this.Hide();
-                        process.WaitForExit();
-                        this.Show();
-                        goNext();
-                    }
-                    catch (Exception)
-                    {
-                        Instructions inst = new Instructions();
-                        inst.Show();
-                        buttonWasClicked = true;
-                        this.Close();
-                    }
-                }
-        }
         
 
         private bool buttonWasClicked = false;
