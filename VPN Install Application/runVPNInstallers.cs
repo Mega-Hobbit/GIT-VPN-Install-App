@@ -14,107 +14,100 @@ namespace VPN_Install_Application
         int installer_order = 0;
         int config_order = 0;
         int installerlength;
-
+        int configlength;
+        string[] vpnsubdirs;
 
         public runVPNInstallers(List<string> passed_list)
         {
             InitializeComponent();
             list = passed_list;
-            goNext();
+            change_appstate();
+            readConfig();
         }
 
-        public void goNext()
+        public void change_appstate()
         {
-            change_appstate(list[config_order]);
-            if (installer_order > 0)
-            {
-                btnBack.Enabled = true;
-            }
-        }
-
-        public void change_appstate(string selected_conf)
-        {
+            string selected_conf = list[config_order];
 
             using (StreamReader sr = new StreamReader(selected_conf))
             {
-                try
+                string configstr;
+                string[] configArray;
+                configstr = sr.ReadLine();
+
+                configArray = configstr.Split(',');
+                string vpnconfigregion = configArray[0];
+                Debug.WriteLine(vpnconfigregion);
+
+                string vpninstallerfolder = vpnconfigregion + "\\installers\\";
+                Debug.WriteLine(vpninstallerfolder);
+
+                vpnsubdirs = Directory.GetDirectories(vpninstallerfolder, "*", System.IO.SearchOption.AllDirectories);
+
+                installerlength = vpnsubdirs.Length - 1;
+                configlength = list.Count - 1;
+            }
+        }
+    
+
+        public void readConfig()
+        {
+            Debug.WriteLine("Reading config: " + vpnsubdirs[installer_order] + "\\config.ini");
+            Debug.WriteLine("Page " + installer_order + " of " + config_order);
+
+            if (File.Exists(vpnsubdirs[installer_order] + "\\config.ini"))
+            {
+                using (StreamReader read = new StreamReader(vpnsubdirs[installer_order] + "\\config.ini"))
+
                 {
-                    string configstr;
-                    string[] configArray;
-                    configstr = sr.ReadLine();
+                    string str;
+                    string[] readArray;
+                    str = read.ReadLine();
 
-                    configArray = configstr.Split(',');
-                    string vpnconfigregion = configArray[0];
-                    Debug.WriteLine(vpnconfigregion);
+                    readArray = str.Split('|');
+                    installer = vpnsubdirs[installer_order] + "\\" + readArray[0];
+                    pictureBox2.Image = Image.FromFile(vpnsubdirs[installer_order] + "\\" + readArray[1]);
 
-                    string vpninstallerfolder = vpnconfigregion + "\\installers\\";
-                    Debug.WriteLine(vpninstallerfolder);
+                    textBox1.Text = readArray[2];
+                }
+            }
 
-                    string[] vpnsubdirs = Directory.GetDirectories(vpninstallerfolder, "*", System.IO.SearchOption.AllDirectories);
+            if (installer_order == 0 && config_order == 0)
+            { btnBack.Enabled = false; }
+            else { btnBack.Enabled = true; }
+        }
 
-                    if (File.Exists(vpnsubdirs[installer_order] + "\\config.ini"))
+        public void nextCounter()
+        {
+            if (config_order <= configlength  && installer_order < installerlength)
+            {
+                installer_order = installer_order + 1;
+                while (!File.Exists(vpnsubdirs[installer_order] + "\\config.ini"))
+                {
+                    if (installer_order < installerlength)
                     {
-                        Debug.WriteLine("Reading config: " + vpnsubdirs[installer_order] + "\\config.ini");
-                        using (StreamReader read = new StreamReader(vpnsubdirs[installer_order] + "\\config.ini"))
-
-                        {
-                            string str;
-                            string[] readArray;
-                            str = read.ReadLine();
-
-                            readArray = str.Split('|');
-                            installer = vpnsubdirs[installer_order] + "\\" + readArray[0];
-                            pictureBox2.Image = Image.FromFile(vpnsubdirs[installer_order] + "\\" + readArray[1]);
-
-                            textBox1.Text = readArray[2];
-                        }
+                        installer_order = installer_order + 1;
                     }
                     else
                     {
-                        //MessageBox.Show(vpnsubdirs[installer_order] + "\\config.ini does not exist, unable to populate.");
-                        if (installer_order < installerlength)
-                        {
-                            installer_order = installer_order + 1;
-                            Debug.WriteLine(installer_order + " " + installerlength);
-                        }
-                        else
-                        {
-                            config_order = config_order + 1;
-                            installer_order = 0;
-
-                        }
-                        try
-                        {
-                            goNext();
-                        }
-                        catch (Exception)
-                        {
-                            Instructions inst = new Instructions();
-                            inst.Show();
-                            buttonWasClicked = true;
-                            this.Close();
-                        }
+                        config_order = config_order + 1;
+                        installer_order = 0;
                     }
-
-                    installerlength = vpnsubdirs.Length - 1;
-                    Debug.WriteLine("Currently at " + installer_order + " " + installerlength);
                 }
-                catch (Exception)
-                {
-                    Instructions inst = new Instructions();
-                    inst.Show();
-                    buttonWasClicked = true;
-                    this.Close();
-                }
-
             }
-
-            if (installer_order > installerlength)
+            else if (config_order < configlength)
             {
                 config_order = config_order + 1;
                 installer_order = 0;
             }
-
+            else
+            {
+                Instructions inst = new Instructions();
+                inst.Show();
+                buttonWasClicked = true;
+                this.Hide();
+            }
+            Debug.WriteLine("nextcounter " + config_order + " of " + configlength);
         }
 
         private string installer;
@@ -122,97 +115,68 @@ namespace VPN_Install_Application
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            if (installer_order < installerlength)
-            {
-                installer_order = installer_order + 1;
-
-            }
-            else
-            {
-                config_order = config_order + 1;
-                installer_order = 0;
-            }
-
             try
             {
-                try
-                {
-                    var process = Process.Start(installer);
-                    this.Hide();
-                    process.WaitForExit();
-                    this.Show();
-                }
-                catch (Exception) {
-                    MessageBox.Show("Unable to run" + installer);
-                };
-                goNext();
+                var process = Process.Start(installer);
+                this.Hide();
+                process.WaitForExit();
+                this.Show();
             }
             catch (Exception)
             {
-                Instructions inst = new Instructions();
-                inst.Show();
-                buttonWasClicked = true;
-                this.Close();
+                MessageBox.Show("Unable to run" + installer);
             }
+
+            change_appstate();
+            nextCounter();
+            readConfig();
         }
 
         private void btnSkip_Click(object sender, EventArgs e)
         {
-            if (installer_order < installerlength)
-            {
-                installer_order = installer_order + 1;
-                Debug.WriteLine(installer_order + " " + installerlength);
-            } else
-            {
-                config_order = config_order + 1;
-                installer_order = 0;
-
-            }
-            try
-            {
-                goNext();
-            }
-            catch (Exception)
-            {
-                Instructions inst = new Instructions();
-                inst.Show();
-                buttonWasClicked = true;
-                this.Close();
+            change_appstate();
+            nextCounter();
+            readConfig();
             }
 
 
-
-
-        }
-
-        
         private void btnBack_Click(object sender, EventArgs e)
         {
-            installer_order = installer_order - 1;
-
-            if (installer_order <= 0)
+            if (installer_order > 0)
+            {installer_order = installer_order - 1;}
+            else
             {
                 if (config_order > 0)
                 {
                     config_order = config_order - 1;
+                    change_appstate();
                     installer_order = installerlength;
-                    goNext();
                 }
                 else
                 {
                     btnBack.Enabled = false;
-                    goNext();
-                }
-            } else {
-                if (installer_order > 0)
-                {
-                    goNext();
                 }
             }
+
+
+            while (!File.Exists(vpnsubdirs[installer_order] + "\\config.ini"))
+            {
+                if(installer_order >= 0)
+                {installer_order = installer_order - 1;}
+            else
+            {
+                    if (config_order > 0)
+                    {
+                        change_appstate();
+                        config_order = config_order - 1;
+                        installer_order = installerlength;
+                    }
+                }
+            }
+            change_appstate();
+            readConfig();
         }
-
-
-        
+    
 
         
 
@@ -230,8 +194,6 @@ namespace VPN_Install_Application
                 this.Close();
             }
         }
-
-
 
         //ensures when user clicks X nothing happens
         private void runVPNnstall_FormClosing(object sender, FormClosingEventArgs e)

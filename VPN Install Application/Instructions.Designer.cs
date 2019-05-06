@@ -29,23 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Instructions));
-            this.btnBack = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnPrevious = new System.Windows.Forms.Button();
             this.btnNextInstruction = new System.Windows.Forms.Button();
             this.picInstructions = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picInstructions)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnBack
-            // 
-            this.btnBack.Location = new System.Drawing.Point(12, 415);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(75, 23);
-            this.btnBack.TabIndex = 0;
-            this.btnBack.Text = "<< Back";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnCancel
             // 
@@ -97,7 +86,6 @@
             this.Controls.Add(this.btnNextInstruction);
             this.Controls.Add(this.btnPrevious);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnBack);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Instructions";
@@ -111,8 +99,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnPrevious;
         private System.Windows.Forms.Button btnNextInstruction;

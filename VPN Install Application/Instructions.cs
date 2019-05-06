@@ -18,16 +18,7 @@ namespace VPN_Install_Application
         {
             InitializeComponent();
         }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            ExitStatus = 1;
-            this.Close();
-            //InstallNetExtender formNetExtender = new InstallNetExtender();
-            //formNetExtender.Show();
-        }
-
-        
+       
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
