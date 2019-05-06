@@ -92,6 +92,7 @@ namespace VPN_Install_Application
                     {
                         config_order = config_order + 1;
                         installer_order = 0;
+                        change_appstate();
                     }
                 }
             }
@@ -99,6 +100,7 @@ namespace VPN_Install_Application
             {
                 config_order = config_order + 1;
                 installer_order = 0;
+                change_appstate();
             }
             else
             {
