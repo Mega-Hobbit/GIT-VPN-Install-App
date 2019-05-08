@@ -25,7 +25,7 @@ namespace VPN_Install_Application
         FileInfo[] Files = dinfo.GetFiles(FileType);
         foreach (FileInfo file in Files)
         {
-            lsb.Items.Add(file.Name);
+            lsb.Items.Add(file.Name.Replace("config.ini", "").ToUpper());
         }
     }
 
@@ -40,8 +40,7 @@ namespace VPN_Install_Application
 
             foreach(object checkeditems in checkedListBox1.CheckedItems)
             {
-                install_list.Add(checkeditems.ToString());
-
+                install_list.Add(checkeditems.ToString() + "config.ini");
             }
 
             ExeInstaller newExeInstaller = new ExeInstaller(install_list);
