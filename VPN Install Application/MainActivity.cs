@@ -9,12 +9,20 @@ namespace VPN_Install_Application
     public partial class MainActivity : Form
     {
         string configpath = Path.GetDirectoryName(Application.ExecutablePath);
+        string statefile = @"state.temp";
         List<string> install_list = new List<string>();
 
         public MainActivity()
         {
             InitializeComponent();
             PopulateListBox(checkedListBox1, configpath , "*config.ini");
+            if (File.Exists(statefile))
+            {
+                Debug.WriteLine("State file " + statefile + " detected, reloading state.");
+                runVPNInstallers runNext = new runVPNInstallers(install_list, statefile);
+                runNext.Show();
+                this.WindowState = FormWindowState.Minimized;
+            }
         }
 
     
@@ -43,7 +51,7 @@ namespace VPN_Install_Application
                 install_list.Add(checkeditems.ToString() + "config.ini");
             }
 
-            ExeInstaller newExeInstaller = new ExeInstaller(install_list);
+            ExeInstaller newExeInstaller = new ExeInstaller(install_list, statefile);
             newExeInstaller.Show();
             this.Hide();
         }

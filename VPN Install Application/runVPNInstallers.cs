@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 
@@ -16,13 +17,46 @@ namespace VPN_Install_Application
         int installerlength;
         int configlength;
         string[] vpnsubdirs;
+        string statefile;
 
-        public runVPNInstallers(List<string> passed_list)
+        public runVPNInstallers(List<string> passed_list, string passed_statefile)
         {
             InitializeComponent();
             list = passed_list;
-            change_appstate();
-            readConfig();
+            statefile = passed_statefile;
+
+            if (File.Exists(statefile))
+            {
+                using (StreamReader sr = new StreamReader(statefile))
+                {
+                    string[] stateArray;
+                    string statestr = sr.ReadToEnd();
+                    Debug.WriteLine(statestr);
+                    stateArray = statestr.Split("\r\n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+                    installer_order = Convert.ToInt32(stateArray[0]);
+                    config_order = Convert.ToInt32(stateArray[1]);
+                    installerlength = Convert.ToInt32(stateArray[2]);
+                    configlength = Convert.ToInt32(stateArray[3]);
+                    list = stateArray[4].Split(',').ToList();
+
+                    //foreach (string i in )
+
+                    vpnsubdirs = stateArray[5].Split(',');
+                    //list = stateArray[4].Split(',');
+
+
+                }
+                File.Delete(statefile);
+                change_appstate();
+                nextCounter();
+                readConfig();
+            }
+            else
+            {
+                change_appstate();
+                readConfig();
+            }
+
         }
 
         public void change_appstate()
@@ -31,9 +65,8 @@ namespace VPN_Install_Application
 
             using (StreamReader sr = new StreamReader(selected_conf))
             {
-                string configstr;
                 string[] configArray;
-                configstr = sr.ReadLine();
+                string configstr = sr.ReadLine();
 
                 configArray = configstr.Split(',');
                 string vpnconfigregion = configArray[0];
@@ -120,8 +153,18 @@ namespace VPN_Install_Application
             try
             {
                 var process = Process.Start(installer);
+                string liststring = string.Join(",", list.ToArray());
+                string vpnsubdirsString = string.Join(",", vpnsubdirs.ToArray());
+                string[] state = {installer_order.ToString(),config_order.ToString(),installerlength.ToString(),configlength.ToString(), liststring, vpnsubdirsString};
+
+                File.WriteAllLines(statefile, state);
+
+                //Task scheduler will be coded here
+
+
                 this.Hide();
                 process.WaitForExit();
+                File.Delete(@"state.temp");
                 this.Show();
             }
             catch (Exception)

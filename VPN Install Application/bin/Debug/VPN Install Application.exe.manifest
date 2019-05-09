@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VPN Install Application.exe" size="2895280">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VPN Install Application.exe" size="2896816">
       <assemblyIdentity name="VPN Install Application" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>HG1KuJf8Ua2HvoTwPlp/y7K3BU7I6JkbWgkqbF2PKNk=</dsig:DigestValue>
+        <dsig:DigestValue>XuVKVVFL8bHP8s4lLNBK71poM+Yh6O7jI5SH3PEReIs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

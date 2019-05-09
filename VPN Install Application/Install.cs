@@ -14,13 +14,15 @@ namespace VPN_Install_Application
         DirectoryInfo Source;
         DirectoryInfo Target;
         DirectoryInfo Installers;
+        string statefile;
 
         Thread CopyThread;
 
-        public ExeInstaller(List<string> install_list)
+        public ExeInstaller(List<string> install_list, string passed_statefile)
         {
             InitializeComponent();
             pass_list = install_list;
+            statefile = passed_statefile;
             CopyThread = new Thread(() => checker(install_list)); CopyThread.IsBackground = true; CopyThread.Start();
         }
 
@@ -28,7 +30,11 @@ namespace VPN_Install_Application
         {
             foreach (string items in install_list)
             {
-                Copy(items);
+                try
+                {
+                    Copy(items);
+                }
+                catch (Exception) { }
             }
 
             AppendTextBox("\r\nCopying completed, click next to continue.");
@@ -138,7 +144,7 @@ namespace VPN_Install_Application
 
         private void btnNext_Click(object sender2, EventArgs e)
         {
-             runVPNInstallers runNext = new runVPNInstallers(pass_list);
+             runVPNInstallers runNext = new runVPNInstallers(pass_list, statefile);
              runNext.Show();
             buttonWasClicked = true;
             this.Close(); 
