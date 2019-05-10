@@ -9,7 +9,7 @@ namespace VPN_Install_Application
     public partial class MainActivity : Form
     {
         string configpath = Path.GetDirectoryName(Application.ExecutablePath);
-        string statefile = Path.GetFullPath(Application.ExecutablePath) + @"state.temp";
+        string statefile = Path.GetFileName(Application.ExecutablePath + "\\state.temp") ;
         List<string> install_list = new List<string>();
 
         public MainActivity()
