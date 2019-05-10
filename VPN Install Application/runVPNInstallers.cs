@@ -43,8 +43,13 @@ namespace VPN_Install_Application
                 }
                 File.Delete(statefile);
 
-                var rWrite = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce", true);
-                rWrite.DeleteValue("mtivpninstaller");
+                try
+                {
+                    var rWrite = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce", true);
+                    rWrite.DeleteValue("mtivpninstaller");
+                }
+                catch { }
+
                 File.Delete(statefile);
 
                 change_appstate();
