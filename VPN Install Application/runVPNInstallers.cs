@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
@@ -38,15 +39,14 @@ namespace VPN_Install_Application
                     installerlength = Convert.ToInt32(stateArray[2]);
                     configlength = Convert.ToInt32(stateArray[3]);
                     list = stateArray[4].Split(',').ToList();
-
-                    //foreach (string i in )
-
                     vpnsubdirs = stateArray[5].Split(',');
-                    //list = stateArray[4].Split(',');
-
-
                 }
                 File.Delete(statefile);
+
+                var rWrite = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce", true);
+                rWrite.DeleteValue("mtivpninstaller");
+                File.Delete(statefile);
+
                 change_appstate();
                 nextCounter();
                 readConfig();
@@ -160,11 +160,14 @@ namespace VPN_Install_Application
                 File.WriteAllLines(statefile, state);
 
                 //Task scheduler will be coded here
+                var rWrite = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce", true);
 
+                rWrite.SetValue("mtivpninstaller", Path.GetFullPath(Application.ExecutablePath));
 
                 this.Hide();
                 process.WaitForExit();
-                File.Delete(@"state.temp");
+                File.Delete(statefile);
+                rWrite.DeleteValue("mtivpninstaller");
                 this.Show();
             }
             catch (Exception)
