@@ -41,13 +41,13 @@ namespace VPN_Install_Application
                     list = stateArray[4].Split(',').ToList();
                     vpnsubdirs = stateArray[5].Split(',');
                 }
-                //File.Delete(statefile);
+                File.Delete(statefile);
 
                 try
                 {
                     var rWrite = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce", true);
                     rWrite.DeleteValue("mtivpninstaller");
-                    File.Delete(statefile);
+                    //File.Delete(statefile);
                 }
                 catch (Exception ex){ MessageBox.Show(ex.Message); }
 
