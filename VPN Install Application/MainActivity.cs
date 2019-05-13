@@ -8,14 +8,15 @@ namespace VPN_Install_Application
 {
     public partial class MainActivity : Form
     {
-        string configpath = Path.GetDirectoryName(Application.ExecutablePath);
-        string statefile = Path.GetFileName(Application.ExecutablePath + "\\state.temp") ;
+        string configpath = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
+        string statefile = Path.GetFileName(AppDomain.CurrentDomain.BaseDirectory + @"state.temp") ;
         List<string> install_list = new List<string>();
 
         public MainActivity()
         {
             InitializeComponent();
             PopulateListBox(checkedListBox1, configpath , "*config.ini");
+            //MessageBox.Show(AppDomain.CurrentDomain.BaseDirectory + @"state.temp");
             if (File.Exists(statefile))
             {
                 Debug.WriteLine("State file " + statefile + " detected, reloading state.");
