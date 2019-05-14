@@ -9,16 +9,17 @@ namespace VPN_Install_Application
     public partial class MainActivity : Form
     {
         string configpath = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
-        string statefile = Path.GetFileName(AppDomain.CurrentDomain.BaseDirectory + @"state.temp") ;
+        string statefile = Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + "state.temp") ;
         List<string> install_list = new List<string>();
 
         public MainActivity()
         {
             InitializeComponent();
             PopulateListBox(checkedListBox1, configpath , "*config.ini");
-            //MessageBox.Show(AppDomain.CurrentDomain.BaseDirectory + @"state.temp");
+            MessageBox.Show(statefile);
             if (File.Exists(statefile))
             {
+                MessageBox.Show("File exist!!");
                 Debug.WriteLine("State file " + statefile + " detected, reloading state.");
                 runVPNInstallers runNext = new runVPNInstallers(install_list, statefile);
                 runNext.Show();
