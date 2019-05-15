@@ -16,10 +16,8 @@ namespace VPN_Install_Application
         {
             InitializeComponent();
             PopulateListBox(checkedListBox1, configpath , "*config.ini");
-            //MessageBox.Show(statefile);
             if (File.Exists(statefile))
             {
-                //MessageBox.Show("File exist!!");
                 Debug.WriteLine("State file " + statefile + " detected, reloading state.");
                 runVPNInstallers runNext = new runVPNInstallers(install_list, statefile);
                 runNext.Show();
@@ -50,7 +48,7 @@ namespace VPN_Install_Application
 
             foreach(object checkeditems in checkedListBox1.CheckedItems)
             {
-                install_list.Add(checkeditems.ToString() + "config.ini");
+                install_list.Add(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory) + checkeditems.ToString() + "config.ini");
             }
 
             ExeInstaller newExeInstaller = new ExeInstaller(install_list, statefile);
