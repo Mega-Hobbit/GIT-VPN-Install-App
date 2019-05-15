@@ -16,10 +16,10 @@ namespace VPN_Install_Application
         {
             InitializeComponent();
             PopulateListBox(checkedListBox1, configpath , "*config.ini");
-            MessageBox.Show(statefile);
+            //MessageBox.Show(statefile);
             if (File.Exists(statefile))
             {
-                MessageBox.Show("File exist!!");
+                //MessageBox.Show("File exist!!");
                 Debug.WriteLine("State file " + statefile + " detected, reloading state.");
                 runVPNInstallers runNext = new runVPNInstallers(install_list, statefile);
                 runNext.Show();
