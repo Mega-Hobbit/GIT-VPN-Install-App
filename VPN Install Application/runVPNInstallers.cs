@@ -32,6 +32,7 @@ namespace VPN_Install_Application
                 {
                     string[] stateArray;
                     string statestr = sr.ReadToEnd();
+                    MessageBox.Show(statestr);
                     Debug.WriteLine(statestr);
                     stateArray = statestr.Split("\r\n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
                     installer_order = Convert.ToInt32(stateArray[0]);
@@ -45,9 +46,10 @@ namespace VPN_Install_Application
 
                 try
                 {
-                    if (Registry.CurrentUser.GetValue(@"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce", "mtivpninstaller") != null)
+
+                    var rWrite = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce", true);
+                    if (rWrite.GetValue("mtivpninstaller") != null)
                     {
-                        var rWrite = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce", true);
                         rWrite.DeleteValue("mtivpninstaller");
                     }
                 }
