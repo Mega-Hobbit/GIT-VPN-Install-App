@@ -30,25 +30,20 @@ namespace VPN_Install_Application
         {
             foreach (string items in install_list)
             {
-                try
-                {
                     Copy(items);
-                }
-                catch (Exception) { }
             }
-
-            AppendTextBox("\r\nCopying completed, click next to continue.");
-            //if (ANZ) { Copy("anz"); }
-            //if (NA) { Copy("na");}
-            //if (UK) { Copy("uk");}
-            //if (EU) { Copy("eu"); }
+            AppendTextBox("\r\nAll actions completed, click next to continue.");
         }
 
         public void Copy(string selecteditem)
         {
             AppendNextButton(false);
+
+            try
+            {
             using (StreamReader sr = new StreamReader(selecteditem))
             {
+
                 while (sr.Peek() >= 0)
                 {
 
@@ -64,11 +59,18 @@ namespace VPN_Install_Application
                     Installers = new DirectoryInfo(strArray[2]);
                     Debug.WriteLine("Installer Folder is set to " + Installers);
                 }
+
+
             }
                 CopyFiles(Source, Target);
                 AppendTextBox("\r\nRegion " + selecteditem + " copy completed. \r\n");
                 AppendNextButton(true);
-
+            }
+                catch (Exception)
+                    {
+                        MessageBox.Show("There is a problem with the file or it does not exist. \r\n" + selecteditem, "Problem reading file", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        closeform(true);
+                    }
         }
 
         public void AppendTextBox(string value)
@@ -91,6 +93,29 @@ namespace VPN_Install_Application
 
             if (value) { btnNext.Enabled = true;  } else { btnNext.Enabled = false; }
 
+        }
+
+        public void closeform(bool value)
+        {
+            if (InvokeRequired)
+            {
+                this.Invoke(new Action<bool>(closeform), new object[] { value });
+                return;
+            }
+
+            if (value)
+            {
+                buttonWasClicked = true;
+                MainActivity MainMenuForm = new MainActivity();
+                MainMenuForm.Show();
+                this.Close();
+            } else {
+                buttonWasClicked = true;
+                runVPNInstallers runNext = new runVPNInstallers(pass_list, statefile);
+                runNext.Show();
+                this.Opacity = 0.0f;
+                this.ShowInTaskbar = false;
+            }
         }
 
         public void CopyFiles(DirectoryInfo filesource, DirectoryInfo filetarget)
@@ -135,11 +160,7 @@ namespace VPN_Install_Application
             var confirmResult = MessageBox.Show("Are you sure you want to cancel the installation?", "Cancel Installation", MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
-                CopyThread.Abort();
-                MainActivity MainMenuForm = new MainActivity();
-                MainMenuForm.Show();
-                buttonWasClicked = true;
-                this.Close();
+                closeform(true);
             }
             }
 
@@ -147,20 +168,16 @@ namespace VPN_Install_Application
 
         private void btnNext_Click(object sender2, EventArgs e)
         {
-             runVPNInstallers runNext = new runVPNInstallers(pass_list, statefile);
-             runNext.Show();
-            buttonWasClicked = true;
-            this.Close(); 
+            closeform(false);
         }
 
         private void ExeInstaller_FormClosing(object sender, FormClosingEventArgs e)
         {
+            CopyThread.Abort();
             if (!buttonWasClicked)
             { e.Cancel = true; }
         }
     }
-
-
 }
     
 

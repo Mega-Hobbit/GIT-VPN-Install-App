@@ -21,7 +21,8 @@ namespace VPN_Install_Application
                 Debug.WriteLine("State file " + statefile + " detected, reloading state.");
                 runVPNInstallers runNext = new runVPNInstallers(install_list, statefile);
                 runNext.Show();
-                this.WindowState = FormWindowState.Minimized;
+                this.Opacity = 0.0f;
+                this.ShowInTaskbar = false;
             }
         }
 

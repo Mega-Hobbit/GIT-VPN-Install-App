@@ -82,39 +82,51 @@ namespace VPN_Install_Application
                 string vpninstallerfolder = vpnconfigregion + "\\installers\\";
                 Debug.WriteLine(vpninstallerfolder);
 
-                vpnsubdirs = Directory.GetDirectories(vpninstallerfolder, "*", System.IO.SearchOption.AllDirectories);
+                try
+                {
+                    vpnsubdirs = Directory.GetDirectories(vpninstallerfolder, "*", System.IO.SearchOption.AllDirectories);
+                    installerlength = vpnsubdirs.Length - 1;
+                    configlength = list.Count - 1;
+                }
+                catch (Exception)
+                { vpnsubdirs = null; installerlength = 0; configlength = 0; }
 
-                installerlength = vpnsubdirs.Length - 1;
-                configlength = list.Count - 1;
             }
         }
     
 
         public void readConfig()
         {
-            Debug.WriteLine("Reading config: " + vpnsubdirs[installer_order] + "\\config.ini");
-            Debug.WriteLine("Page " + installer_order + " of " + config_order);
 
-            if (File.Exists(vpnsubdirs[installer_order] + "\\config.ini"))
+            if (vpnsubdirs != null)
             {
-                using (StreamReader read = new StreamReader(vpnsubdirs[installer_order] + "\\config.ini"))
+                Debug.WriteLine("Reading config: " + vpnsubdirs[installer_order] + "\\config.ini");
+                Debug.WriteLine("Page " + installer_order + " of " + config_order);
 
+                if (File.Exists(vpnsubdirs[installer_order] + "\\config.ini"))
                 {
-                    string str;
-                    string[] readArray;
-                    str = read.ReadLine();
+                    using (StreamReader read = new StreamReader(vpnsubdirs[installer_order] + "\\config.ini"))
 
-                    readArray = str.Split('|');
-                    installer = vpnsubdirs[installer_order] + "\\" + readArray[0];
-                    pictureBox2.Image = Image.FromFile(vpnsubdirs[installer_order] + "\\" + readArray[1]);
+                    {
+                        string str;
+                        string[] readArray;
+                        str = read.ReadLine();
 
-                    textBox1.Text = readArray[2];
+                        readArray = str.Split('|');
+                        installer = vpnsubdirs[installer_order] + "\\" + readArray[0];
+                        pictureBox2.Image = Image.FromFile(vpnsubdirs[installer_order] + "\\" + readArray[1]);
+
+                        textBox1.Text = readArray[2];
+                    }
                 }
+                if (installer_order == 0 && config_order == 0)
+                { btnBack.Enabled = false; }
+                else { btnBack.Enabled = true; }
+
+            } else {
+                closeform(false);
             }
 
-            if (installer_order == 0 && config_order == 0)
-            { btnBack.Enabled = false; }
-            else { btnBack.Enabled = true; }
         }
 
         public void nextCounter()
@@ -144,13 +156,30 @@ namespace VPN_Install_Application
             }
             else
             {
-                Instructions inst = new Instructions();
-                inst.Show();
-                buttonWasClicked = true;
-                this.Hide();
+                closeform(false);
             }
             Debug.WriteLine("nextcounter " + config_order + " of " + configlength);
         }
+
+        public void closeform(bool value)
+        {
+            if (value)
+            {
+                MainActivity MainMenuForm = new MainActivity();
+                MainMenuForm.Show();
+                buttonWasClicked = true;
+                this.Close();
+            }
+            else
+            {
+                Instructions inst = new Instructions();
+                inst.Show();
+                buttonWasClicked = true;
+                this.Opacity = 0.0f;
+                this.ShowInTaskbar = false;   
+            }
+        }
+
 
         private string installer;
 
@@ -243,10 +272,7 @@ namespace VPN_Install_Application
             var confirmResult = MessageBox.Show("Are you sure you want to cancel the installation?", "Cancel Installation", MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
-                MainActivity MainMenuForm = new MainActivity();
-                MainMenuForm.Show();
-                buttonWasClicked = true;
-                this.Close();
+                closeform(true);
             }
         }
 
