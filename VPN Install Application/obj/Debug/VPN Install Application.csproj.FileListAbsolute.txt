@@ -72,3 +72,16 @@ D:\GIT-VPN-Install-App\VPN Install Application\bin\Debug\VPN Install Application
 D:\GIT-VPN-Install-App\VPN Install Application\bin\Debug\VPN Install Application.pdb
 D:\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VPN Install Application.exe.manifest
 D:\GIT-VPN-Install-App\VPN Install Application\obj\Debug\VPN Install Application.application
+C:\Users\wlam\Documents\GIT-VPN-Install-App-Master\VPN Install Application\obj\Debug\VPN Install Application.csprojAssemblyReference.cache
+C:\Users\wlam\Documents\GIT-VPN-Install-App-Master\VPN Install Application\obj\Debug\VPN_Install_Application.runVPNInstallers.resources
+C:\Users\wlam\Documents\GIT-VPN-Install-App-Master\VPN Install Application\obj\Debug\VPN_Install_Application.Instructions.resources
+C:\Users\wlam\Documents\GIT-VPN-Install-App-Master\VPN Install Application\obj\Debug\VPN_Install_Application.MainActivity.resources
+C:\Users\wlam\Documents\GIT-VPN-Install-App-Master\VPN Install Application\obj\Debug\VPN_Install_Application.ExeInstaller.resources
+C:\Users\wlam\Documents\GIT-VPN-Install-App-Master\VPN Install Application\obj\Debug\VPN_Install_Application.Properties.Resources.resources
+C:\Users\wlam\Documents\GIT-VPN-Install-App-Master\VPN Install Application\obj\Debug\VPN Install Application.csproj.GenerateResource.cache
+C:\Users\wlam\Documents\GIT-VPN-Install-App-Master\VPN Install Application\obj\Debug\VPN Install Application.csproj.CoreCompileInputs.cache
+C:\Users\wlam\Documents\GIT-VPN-Install-App-Master\VPN Install Application\obj\Debug\VPN Install Application.exe
+C:\Users\wlam\Documents\GIT-VPN-Install-App-Master\VPN Install Application\obj\Debug\VPN Install Application.pdb
+C:\Users\wlam\Documents\GIT-VPN-Install-App-Master\VPN Install Application\bin\Debug\VPN Install Application.exe.config
+C:\Users\wlam\Documents\GIT-VPN-Install-App-Master\VPN Install Application\bin\Debug\VPN Install Application.exe
+C:\Users\wlam\Documents\GIT-VPN-Install-App-Master\VPN Install Application\bin\Debug\VPN Install Application.pdb

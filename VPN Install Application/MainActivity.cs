@@ -9,13 +9,13 @@ namespace VPN_Install_Application
     public partial class MainActivity : Form
     {
         string configpath = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
-        string statefile = Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + "state.temp") ;
+        string statefile = Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + "state.temp");
         List<string> install_list = new List<string>();
 
         public MainActivity()
         {
             InitializeComponent();
-            PopulateListBox(checkedListBox1, configpath , "*config.ini");
+            PopulateListBox(checkedListBox1, configpath, "*config.ini");
             if (File.Exists(statefile))
             {
                 Debug.WriteLine("State file " + statefile + " detected, reloading state.");
@@ -26,32 +26,28 @@ namespace VPN_Install_Application
             }
         }
 
-    
 
-    private void PopulateListBox(ListBox lsb, string Folder, string FileType)
-    {
-        DirectoryInfo dinfo = new DirectoryInfo(Folder);
-        FileInfo[] Files = dinfo.GetFiles(FileType);
-        foreach (FileInfo file in Files)
+
+        private void PopulateListBox(ListBox lsb, string Folder, string FileType)
         {
-            lsb.Items.Add(file.Name.Replace("config.ini", "").ToUpper());
+            DirectoryInfo dinfo = new DirectoryInfo(Folder);
+            FileInfo[] Files = dinfo.GetFiles(FileType);
+            foreach (FileInfo file in Files)
+            {
+                lsb.Items.Add(file.Name.Replace("config.ini", "").ToUpper());
+            }
         }
-    }
 
 
-    private void Exit_Click(object sender, System.EventArgs e)
+        private void Exit_Click(object sender, System.EventArgs e)
         {
             Environment.Exit(Environment.ExitCode);
         }
 
         public void Install_Click(object sender, System.EventArgs e)
         {
-<<<<<<< HEAD
-            ExeInstaller newExeInstaller = new ExeInstaller();
-            newExeInstaller.ShowDialog();
-=======
 
-            foreach(object checkeditems in checkedListBox1.CheckedItems)
+            foreach (object checkeditems in checkedListBox1.CheckedItems)
             {
                 install_list.Add(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory) + checkeditems.ToString() + "config.ini");
             }
@@ -63,10 +59,10 @@ namespace VPN_Install_Application
 
         private void MainActivity_FormClosing(object sender, FormClosingEventArgs e)
         {
-                e.Cancel = true;
+            e.Cancel = true;
         }
 
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void CheckedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             Debug.WriteLine("CheckBoxIndexChanged:" + checkedListBox1.CheckedIndices.Count);
             if (checkedListBox1.CheckedIndices.Count > 0)
@@ -74,7 +70,6 @@ namespace VPN_Install_Application
                 Install.Enabled = true;
             }
             else { Install.Enabled = false; }
->>>>>>> e4190cdb5d3fbdc0f4bc4895ca02e475561787b0
         }
     }
 }
