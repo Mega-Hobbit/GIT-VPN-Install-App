@@ -138,9 +138,11 @@ namespace VPN_Install_Application
 
                     string Containing = fi.FullName;
                     if (Containing.Contains(".txt") || Containing.Contains(".rdp") || Containing.Contains(".ps1") ||
-                        Containing.Contains(".bat") || Containing.Contains(".lnk") ||
+                        Containing.Contains(".rcf") ||
+                        Containing.Contains(".bat") || Containing.Contains(".lnk") || Containing.Contains(".pfx") ||
                         Containing.Contains(".TXT") || Containing.Contains(".RDP") || Containing.Contains(".PS1") ||
-                        Containing.Contains(".BAT") || Containing.Contains(".LNK"))
+                        Containing.Contains(".BAT") || Containing.Contains(".LNK") || Containing.Contains(".PFX") ||
+                        Containing.Contains(".RCF"))
                     {
                         Debug.WriteLine("Copying file: " + filetarget.FullName + fi.Name);
                         fi.CopyTo(Path.Combine(filetarget.FullName, fi.Name), true);
