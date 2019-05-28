@@ -52,11 +52,11 @@ namespace VPN_Install_Application
                     str = sr.ReadLine();
 
                     strArray = str.Split(',');
-                    Source = new DirectoryInfo(strArray[0]);
+                    Source = new DirectoryInfo(Environment.ExpandEnvironmentVariables(strArray[0]));
                     Debug.WriteLine("Source Folder is set to " + Source);
-                    Target = new DirectoryInfo(strArray[1]);
+                    Target = new DirectoryInfo(Environment.ExpandEnvironmentVariables(strArray[1]));
                     Debug.WriteLine("Target Folder is set to " + Target);
-                    Installers = new DirectoryInfo(strArray[2]);
+                    Installers = new DirectoryInfo(Environment.ExpandEnvironmentVariables(strArray[2]));
                     Debug.WriteLine("Installer Folder is set to " + Installers);
                 }
 
